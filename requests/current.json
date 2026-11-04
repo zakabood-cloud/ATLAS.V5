@@ -1,1 +1,12 @@
-{"id":"probe-001","urls":["https://example.com/","https://sell.amazon.com/"],"mode":"http","delay":1}
+{
+ "id": "probe-002",
+ "urls": [
+  "https://sell.amazon.com/pricing",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200336920",
+  "https://sell.amazon.ae/",
+  "https://u.ae/en/information-and-services/business/corporate-tax",
+  "https://www.irs.gov/pub/irs-pdf/fw8ben.pdf"
+ ],
+ "mode": "http",
+ "delay": 1.5
+}
