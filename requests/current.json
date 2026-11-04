@@ -1,7 +1,13 @@
 {
- "id": "access-test-001",
+ "id": "meta-pilot-001",
  "urls": [
-  "https://sell.amazon.com/pricing"
+  "https://www.junglescout.com/resources/reports/amazon-seller-report-2025/",
+  "https://fengzhu.info/amazon.pdf",
+  "https://sell.amazon.com/tools/product-opportunity-explorer",
+  "https://sell.amazon.com/blog/amazon-sales-estimator",
+  "https://www.helium10.com/blog/helium-10-vs-jungle-scout-accuracy-amazon-sales-data/",
+  "https://ideas.repec.org/p/hbs/wpaper/15-044.html",
+  "https://sell.amazon.com/pricing/estimate"
  ],
  "mode": "http",
  "delay": 1.5
