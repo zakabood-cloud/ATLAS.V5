@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "question": "I want to specialize in selling products on Amazon. Find the best, most profitable way to do so. Should I sell generic products of what is already selling, or should I sell branded products? I need a full research report on how to make the maximum profit selling products on Amazon; everything related to the subject should be in the report.",
+  "domain": "amazon",
+  "answers": {
+    "alternatives": "All Amazon seller business models listed under product_model are the alternatives; the research decides the ranking.",
+    "audience": "The user (experienced e-commerce operator, new to Amazon); English; detailed, comprehensive.",
+    "budget": "User is willing to pay up to USD 100 for a tool/data subscription (e.g., Helium 10, Jungle Scout, Keepa). The agent cannot purchase or log in; any subscription would be bought by the user, who would share exported data through a private channel. Free public sources otherwise.",
+    "categories": "No preference; research should identify the most profitable categories and flag restricted/regulated ones.",
+    "constraints": "Capital USD 15k-50k; no debt; full-time commitment; UAE legal base (eligibility, tax, company setup to be researched).",
+    "deadline": "None stated.",
+    "decision": "Choose between selling generic products similar to what is already selling versus selling branded products, and determine how to maximize profit selling on Amazon (user-stated).",
+    "deliverables": "Full research report only, in English, as Markdown (readable on GitHub) plus a PDF copy. No separate calculator, launch plan or source library files (worked calculations and sources inside the report).",
+    "evidence": "Rigorous: official Amazon fee/policy pages and data-backed sources, cited claims, worked profit calculations, uncertainty clearly labeled.",
+    "existing_data": "No prior files or data supplied. User has general e-commerce/retail experience outside Amazon.",
+    "experience": "Experienced in e-commerce/retail elsewhere, new to Amazon (no Amazon seller account yet).",
+    "geography": "Seller will be legally based in the UAE. Target marketplace(s) to be determined by the research.",
+    "horizon": "User delegated: research should determine the appropriate evaluation horizon. Evidence should reflect current (2025-2026) Amazon fees, policies and market conditions.",
+    "launch_budget": "Total starting investment USD 15,000-50,000 (inventory, samples, branding, tools, ads, setup), keeping a reserve. Amount the user could lose without serious harm.",
+    "marketplace": "Not decided: compare Amazon marketplaces (e.g., US, UK, EU, UAE, Saudi Arabia and other relevant ones) for a UAE-based seller and recommend one or a sequence. Fulfillment route (FBA, FBM, other) and currency to be compared by the research.",
+    "objective": "Specialize in selling products on Amazon and find the most profitable way to do so (user-stated, initial inquiry).",
+    "permissions": "Final report may be committed to the PUBLIC zakabood-cloud/ATLAS.V5 repo including the user's details (UAE base, USD 15k-50k budget range), explicitly approved by the user. Paid-tool exports must not be committed to the public repo. Integrations to be confirmed during access planning.",
+    "product_model": "Compare every Amazon seller model: retail/online arbitrage, wholesale of existing brands, generic/unbranded copies of best-sellers, private label (own brand), dropshipping, handmade, and other viable models; then recommend the most profitable for this seller.",
+    "risk": "Can tolerate losing part of the investment but never more than invested; no debt.",
+    "scope": "Comprehensive coverage of everything related to maximizing Amazon selling profit (user: \"everything literally everything related to the subject should be in the report\"). Generic vs branded clarified: compare every seller model (arbitrage, wholesale of existing brands, generic/unbranded copies, private label, dropshipping, handmade, others). Includes marketplace choice, fulfillment, categories, sourcing, fees, pricing, advertising, listings, reviews, logistics, cash flow, tax, compliance, risks. Excludes live supplier contact, sampling or purchasing.",
+    "sourcing": "No preference; compare China, UAE/local, Turkey, India, Vietnam, US/EU domestic and others.",
+    "success": "Build a long-term full-time business maximizing yearly profit. Useful = evidence-based comparison/ranking of models and marketplaces, a clear recommended path with worked profit calculations, and actionable guidance covering all profit levers."
+  },
+  "assumptions": {
+    "horizon_choice": "Research chooses the evaluation horizon and compares first-year and 2-3-year profitability views.",
+    "paid_data": "Paid data (max USD 100) is used only if the user subscribes personally and shares exports through a private channel; otherwise free public sources only, and sales/competition figures are labeled as estimates.",
+    "no_live_validation": "The agent will not contact suppliers, order samples, or buy inventory; the report provides a validation plan instead.",
+    "volatility": "Amazon fees and policies change; every figure is dated to its source and must be rechecked before purchasing inventory.",
+    "not_professional_advice": "Report is not legal or tax advice; UAE and foreign tax/company-formation points are flagged for professional confirmation."
+  },
+  "user_ended_intake": true,
+  "assumptions_presented": true,
+  "paid_budget": "100",
+  "deliverables": "Full research report only, in English, as Markdown (readable on GitHub) plus a PDF copy. No separate calculator, launch plan or source library files (worked calculations and sources inside the report).",
+  "created_at": "2026-11-04T23:10:24.687978+00:00"
+}
