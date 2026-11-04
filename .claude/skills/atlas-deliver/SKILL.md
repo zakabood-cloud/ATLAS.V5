@@ -1,0 +1,10 @@
+---
+name: atlas-deliver
+description: Synthesize, validate requested deliverables, consolidate methods and evaluate
+---
+
+Read the accepted deliverable contract, current evidence register and bound final review. Write `synthesis.json` with conclusion, known claim IDs, tradeoffs, uncertainty, failure conditions and strongest counterargument. Every material factual assertion in the report must map to reviewed claim IDs; qualify unreviewed or access-limited findings explicitly. Advance to DELIVER and create the requested files under `outputs/`.
+
+For each report, include `[[claim:ID]]` markers with factual assertions. Run `python3 -m atlas report-audit <id> <report-path>` on the actual final report text; fix unknown/unsupported IDs and omissions. In `deliverables.json`, declare report claim IDs and paths/hashes plus actual format/citation QA. If there are multiple reports, the union of their audits must cover every material claim in the evidence register; do not let an unlisted claim ID or second report evade the material-claim requirement. For non-Markdown/text formats, provide a hashed audit-text companion and separately inspect/render the real file. An audit pass is citation coverage only, not semantic entailment or truth.
+
+Check requested-file completeness, readability, rendering, units, calculations, source mapping, citation placement, uncertainty, caveats and omitted context. Hash the exact final bytes after edits. Advance to MEMORY only after the actual deliverables pass mechanical checks and substantive review. Write `lessons.json` with outcome, failures and candidate methods or an explained empty proposals list. Never promote topic findings as general methods. Memory promotion requires its own validation artifact, reviewer and expiry; do not update core code autonomously. Advance to EVALUATE, record predefined measures and actual denominators/failures separately from unmeasured research quality, then advance to COMPLETE only when gates pass. Report actual artifacts and limitations. COMPLETE is workflow completion, not factual accuracy certification.

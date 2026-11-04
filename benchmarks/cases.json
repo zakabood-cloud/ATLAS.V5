@@ -1,0 +1,82 @@
+[
+  {
+    "id": "LIVE-01",
+    "domain": "amazon",
+    "inquiry": "Which reusable household product should a first-time seller investigate on Amazon US for a 12-month launch?",
+    "required_behavior": "Require budget/category/logistics/risk intake; marketplace-specific sampling, seasonality, estimate uncertainty, full contribution and cash cycle.",
+    "critical_failures": "Must not present modeled competitor sales as observed, omit returns/ad costs, or select a winner without sourcing and downside.",
+    "possible_deliverables": "Report, sourced product shortlist, unit-economics model, supplier validation plan",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-02",
+    "domain": "commerce",
+    "inquiry": "For the same specified product and budget, should we launch on Shopify, Amazon, or both?",
+    "required_behavior": "Clarify product/region/existing audience/operational capacity; use matched channel scenarios, acquisition/retention, fees and payment timing.",
+    "critical_failures": "Must not compare traffic with orders or gross sales with profit; examine combined-channel attribution and doing nothing.",
+    "possible_deliverables": "Comparison report, scenario model, sensitivity table",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-03",
+    "domain": "markets",
+    "inquiry": "Compare UAE and US entry for the same small consumer brand.",
+    "required_behavior": "Clarify emirates/states, category, entity/market-access constraints, currency, population definitions and horizon; current official sources.",
+    "critical_failures": "Do not apply US estimator coverage or fee/tax assumptions to UAE; distinguish expatriate/resident/customer denominator.",
+    "possible_deliverables": "Market comparison, source dataset, conditional entry recommendation",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-04",
+    "domain": "opportunity",
+    "inquiry": "Discover and rank feasible service opportunities for a small business with limited founder time.",
+    "required_behavior": "Interview skills/time/capital/distribution/risk; define exclusions, reference classes, customer tests, opportunity cost and validation criteria.",
+    "critical_failures": "No invented success probabilities, unsupported precise market size or attractive rankings without reversals.",
+    "possible_deliverables": "Ranked hypotheses, evidence register, test plan",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-05",
+    "domain": "finance",
+    "inquiry": "Assess whether a named listed company warrants deeper investment due diligence.",
+    "required_behavior": "Clarify investor horizon/risk/jurisdiction; original filings, restatements, cashflow/liquidity, scenarios and valuation sensitivities.",
+    "critical_failures": "Do not treat modeled intrinsic value as a reliable forecast; require unit/period reconciliation and clear limitations.",
+    "possible_deliverables": "Due-diligence report, reproducible model, risks and further evidence",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-06",
+    "domain": "science",
+    "inquiry": "What does the evidence say about an explicitly defined clinical or scientific intervention and outcome?",
+    "required_behavior": "PICO/PECO and protocol; database searches, selection/exclusions, study/report duplicates, bias and compatible effect measures.",
+    "critical_failures": "No abstract-only certainty, causal inference from uncontrolled association, arbitrary pooling or truncated AI-report evidence.",
+    "possible_deliverables": "Evidence review, screening dataset, source library, certainty table",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-07",
+    "domain": "technology",
+    "inquiry": "Compare two current retrieval systems for an explicitly defined document/search workload.",
+    "required_behavior": "Clarify quality/latency/privacy/cost constraints; versioned representative workload, gold queries, metrics, equal resources and failure tests.",
+    "critical_failures": "Separate engine/model/retrieval effects; no vendor leaderboard as proof of local performance.",
+    "possible_deliverables": "Benchmark code, results, traces, engineering recommendation",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  },
+  {
+    "id": "LIVE-08",
+    "domain": "general",
+    "inquiry": "Resolve a disputed factual account with inconsistent dates and several derivative news reports.",
+    "required_behavior": "Define exact claims/time/geography; chronological primary-source search, original-origin tracing and competing explanations.",
+    "critical_failures": "Do not count syndicated reports as independent sources or hide unresolved material contradictions.",
+    "possible_deliverables": "Claim audit, timeline, cited report",
+    "execution_status": "not_run_as_live_research",
+    "expected_answer": "Not prefilled; freeze evidence and expert rubric before trial"
+  }
+]

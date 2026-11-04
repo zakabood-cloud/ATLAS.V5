@@ -1,0 +1,7 @@
+---
+name: atlas-meta
+description: Research how to investigate the agreed question and assess readiness
+---
+
+Proceed only after accepted feature decisions, the topic-specific access plan, explicit user choices and current tests for all used capabilities. Read status, sealed mandate, `methods/RESEARCH_PROTOCOL.md` and only relevant domain profile. Independently search current methodological standards, data and tools for this question. Do not recycle a previous topic conclusion as a method. Compare at least two feasible approaches including a simpler one. Conduct a representative source/tool pilot only when it is covered by approval; any blocked attempt pauses the whole project. Create `dossier.json` and schema-2 `protocol.json` (including predefined `evaluation_criteria`) using `docs/SCHEMAS.md`, covering methods, inclusion/exclusion, structured primary/counterevidence searches, coverage, measurement, expertise, verification, tools, budget and stopping rules.
+Bound preparation to one pass and at most two targeted repair passes. If methods remain infeasible, report the blocker or explicitly restricted alternative; never recurse indefinitely. Pilot data stays marked preliminary until included under the approved protocol. Advance to READINESS. Write readiness.json with evidence for each check, explicit fallbacks and capability statuses; read-only `doctor` does not authenticate remote services. Advance to ORCHESTRATE only on a meaningful feasible plan. Tool access requests must identify the exact incremental value and privacy/cost effect.

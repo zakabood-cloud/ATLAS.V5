@@ -1,0 +1,2374 @@
+{
+  "schema_version": 1,
+  "version": "5.0.0",
+  "started_at": "2026-11-04T20:22:43.595013+00:00",
+  "finished_at": "2026-11-04T20:23:32.677161+00:00",
+  "seconds": 49.08214933299996,
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "sqlite": "3.46.1",
+    "copilot_runtime_executed": false,
+    "network_calls": 0,
+    "paid_api_calls": 0
+  },
+  "structure": {
+    "ok": true,
+    "checked_units": 98,
+    "errors": [],
+    "scope": "Static subset validation, Python AST and local references; not Copilot runtime or semantic instruction validation."
+  },
+  "tests": {
+    "run": 257,
+    "passed": 257,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "test": "test_dispatch.DispatchTests.test_access_needs_require_use_decision",
+        "status": "passed",
+        "seconds": 0.0003973769998992793
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_attempt_cap_requires_amendment",
+        "status": "passed",
+        "seconds": 5.367999983718619e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_bad_ids_dependencies_and_cycles",
+        "status": "passed",
+        "seconds": 0.00014300099996944482
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_blocked_task_is_deferred_without_rejecting_status",
+        "status": "passed",
+        "seconds": 5.5801999906179844e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_case_alias_paths_conflict",
+        "status": "passed",
+        "seconds": 0.0002658630000951234
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_dependencies_done_only_and_failed_not_retried",
+        "status": "passed",
+        "seconds": 5.337900006452401e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_deterministic_bounded_greedy_selection",
+        "status": "passed",
+        "seconds": 0.0002475259998391266
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_disjoint_parallel_and_no_mutation",
+        "status": "passed",
+        "seconds": 8.598699992035108e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_equal_and_ancestor_conflicts",
+        "status": "passed",
+        "seconds": 0.00021275399990372534
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_exclusive_resources_selected_and_running",
+        "status": "passed",
+        "seconds": 6.223099990165792e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_handoff_is_bounded_and_truthful",
+        "status": "passed",
+        "seconds": 2.199199980168487e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_historical_access_dispositions",
+        "status": "passed",
+        "seconds": 0.00016284100001939805
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_hold_state_and_access_blocks_reject",
+        "status": "passed",
+        "seconds": 4.17219998780638e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_malformed_parameters",
+        "status": "passed",
+        "seconds": 0.00021402600009423622
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_missing_access_scope_does_not_infer_rights",
+        "status": "passed",
+        "seconds": 2.122199998666474e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_path_component_boundaries",
+        "status": "passed",
+        "seconds": 3.839700002572499e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_read_only_parallel",
+        "status": "passed",
+        "seconds": 3.4530999982962385e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_reserved_coordinator_paths",
+        "status": "passed",
+        "seconds": 0.00016307099986079265
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_running_consumes_capacity",
+        "status": "passed",
+        "seconds": 7.03630000771227e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_running_scopes_conflict",
+        "status": "passed",
+        "seconds": 4.087100001015642e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_task_ids_match_core_regex",
+        "status": "passed",
+        "seconds": 9.279699997932767e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_unknown_is_serial_in_both_orders_and_running",
+        "status": "passed",
+        "seconds": 5.81960000545223e-05
+      },
+      {
+        "test": "test_dispatch.DispatchTests.test_unsafe_and_malformed_scopes",
+        "status": "passed",
+        "seconds": 0.00019631899999694724
+      },
+      {
+        "test": "test_engine.Boundaries.test_bad_project_slug",
+        "status": "passed",
+        "seconds": 0.0016626849999283877
+      },
+      {
+        "test": "test_engine.Boundaries.test_cli_error_nonzero",
+        "status": "passed",
+        "seconds": 0.00588998599982915
+      },
+      {
+        "test": "test_engine.Boundaries.test_configuration_not_authentication",
+        "status": "passed",
+        "seconds": 0.002531628000042474
+      },
+      {
+        "test": "test_engine.Boundaries.test_domain_specific_methods_and_deliverables",
+        "status": "passed",
+        "seconds": 0.0016048490001594473
+      },
+      {
+        "test": "test_engine.Boundaries.test_expired_capability",
+        "status": "passed",
+        "seconds": 0.0006413769999653596
+      },
+      {
+        "test": "test_engine.Boundaries.test_fake_tested_capability_rejected",
+        "status": "passed",
+        "seconds": 0.0005902909999804251
+      },
+      {
+        "test": "test_engine.Boundaries.test_json_duplicate_keys",
+        "status": "passed",
+        "seconds": 0.0005765609998888976
+      },
+      {
+        "test": "test_engine.Boundaries.test_json_nan",
+        "status": "passed",
+        "seconds": 0.0007118510000054812
+      },
+      {
+        "test": "test_engine.Boundaries.test_memory_rejects_topic_conclusion",
+        "status": "passed",
+        "seconds": 0.0006323740001334954
+      },
+      {
+        "test": "test_engine.Boundaries.test_memory_version_expiry_and_search",
+        "status": "passed",
+        "seconds": 0.005718753000110155
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_blank_identifier",
+        "status": "passed",
+        "seconds": 0.0010958169998502854
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_contradiction_requires_resolution",
+        "status": "passed",
+        "seconds": 0.0012318389999563806
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_duplicate_origins",
+        "status": "passed",
+        "seconds": 0.0011367179999979271
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_excerpt_not_support_label",
+        "status": "passed",
+        "seconds": 0.0011159970001699548
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_fabricated_source_domain",
+        "status": "passed",
+        "seconds": 0.0009371030000693281
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_future_source_date",
+        "status": "passed",
+        "seconds": 0.0009292209999784973
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_hash_changed",
+        "status": "passed",
+        "seconds": 0.0014086300000144547
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_malicious_source_inert_to_python",
+        "status": "passed",
+        "seconds": 0.0009641340000143828
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_mechanical_pass_is_not_semantic_verification",
+        "status": "passed",
+        "seconds": 0.0013240349999250611
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_missing_source",
+        "status": "passed",
+        "seconds": 0.0007427470000038738
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_no_source_on_material_claim",
+        "status": "passed",
+        "seconds": 0.0007561259999420145
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_numeric_without_calculation",
+        "status": "passed",
+        "seconds": 0.000916952999887144
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_outdated_evidence_flagged",
+        "status": "passed",
+        "seconds": 0.001488307000045097
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_path_escape",
+        "status": "passed",
+        "seconds": 0.0008072119999269489
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_private_ip_not_external_source",
+        "status": "passed",
+        "seconds": 0.0008686930000294524
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_reserved_domain_trailing_dot",
+        "status": "passed",
+        "seconds": 0.0007635770000433695
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_schema_list_required",
+        "status": "passed",
+        "seconds": 0.0008851860000049783
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_self_review",
+        "status": "passed",
+        "seconds": 0.0010477670000454964
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_source_symlink_escape",
+        "status": "passed",
+        "seconds": 0.0009000789998481196
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_unknown_enum_rejected",
+        "status": "passed",
+        "seconds": 0.0007632569997895189
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_untyped_nested_reference_rejected",
+        "status": "passed",
+        "seconds": 0.000715356000000611
+      },
+      {
+        "test": "test_engine.EvidenceTests.test_valid_fixture_explicit_semantic_limit",
+        "status": "passed",
+        "seconds": 0.0012882120001904696
+      },
+      {
+        "test": "test_engine.StateTests.test_adaptive_question_persistence",
+        "status": "passed",
+        "seconds": 0.016988000000083048
+      },
+      {
+        "test": "test_engine.StateTests.test_atomic_failure_keeps_stage",
+        "status": "passed",
+        "seconds": 0.011378036999985852
+      },
+      {
+        "test": "test_engine.StateTests.test_cannot_skip_intake",
+        "status": "passed",
+        "seconds": 0.027069993999930375
+      },
+      {
+        "test": "test_engine.StateTests.test_changed_checkpoint_rejected",
+        "status": "passed",
+        "seconds": 0.022438726000018505
+      },
+      {
+        "test": "test_engine.StateTests.test_complete_synthetic_lifecycle",
+        "status": "passed",
+        "seconds": 0.2346412069998678
+      },
+      {
+        "test": "test_engine.StateTests.test_completed_output_empty_rejected",
+        "status": "passed",
+        "seconds": 0.2186753260000387
+      },
+      {
+        "test": "test_engine.StateTests.test_corrupt_database_recovery",
+        "status": "passed",
+        "seconds": 0.019500359000176104
+      },
+      {
+        "test": "test_engine.StateTests.test_cost_idempotency",
+        "status": "passed",
+        "seconds": 0.14967838899997332
+      },
+      {
+        "test": "test_engine.StateTests.test_cycle_rejected",
+        "status": "passed",
+        "seconds": 0.1728152170001067
+      },
+      {
+        "test": "test_engine.StateTests.test_duplicate_project_does_not_destroy",
+        "status": "passed",
+        "seconds": 0.01611355799991543
+      },
+      {
+        "test": "test_engine.StateTests.test_event_chain_tampering",
+        "status": "passed",
+        "seconds": 0.013349819000040952
+      },
+      {
+        "test": "test_engine.StateTests.test_explicit_end_with_assumptions",
+        "status": "passed",
+        "seconds": 0.019303698999920016
+      },
+      {
+        "test": "test_engine.StateTests.test_meta_required",
+        "status": "passed",
+        "seconds": 0.05541033899999093
+      },
+      {
+        "test": "test_engine.StateTests.test_partial_intake_persists",
+        "status": "passed",
+        "seconds": 0.01877332000003662
+      },
+      {
+        "test": "test_engine.StateTests.test_reopen_records_reason_and_invalidates",
+        "status": "passed",
+        "seconds": 0.2684299210000063
+      },
+      {
+        "test": "test_engine.StateTests.test_sealed_mandate_change_detected",
+        "status": "passed",
+        "seconds": 0.1167238720001933
+      },
+      {
+        "test": "test_engine.StateTests.test_snapshot_tampering_after_review",
+        "status": "passed",
+        "seconds": 0.21094102699998984
+      },
+      {
+        "test": "test_engine.StateTests.test_stage_idempotency",
+        "status": "passed",
+        "seconds": 0.13087406799991186
+      },
+      {
+        "test": "test_engine.StateTests.test_task_retry_limit",
+        "status": "passed",
+        "seconds": 0.5078772960000606
+      },
+      {
+        "test": "test_engine.StateTests.test_tasks_need_actual_output",
+        "status": "passed",
+        "seconds": 0.15819094799985578
+      },
+      {
+        "test": "test_engine.StateTests.test_unknown_answer_rejected",
+        "status": "passed",
+        "seconds": 0.013347354999950767
+      },
+      {
+        "test": "test_engine.StateTests.test_unknown_state",
+        "status": "passed",
+        "seconds": 0.011589340000000448
+      },
+      {
+        "test": "test_engine.StateTests.test_zero_budget_fails_closed",
+        "status": "passed",
+        "seconds": 0.18454955300012443
+      },
+      {
+        "test": "test_quant.QuantTests.test_bayes",
+        "status": "passed",
+        "seconds": 0.00011061300006076635
+      },
+      {
+        "test": "test_quant.QuantTests.test_boolean_not_number",
+        "status": "passed",
+        "seconds": 2.469600008225825e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_cashflow_timing_and_npv",
+        "status": "passed",
+        "seconds": 0.00011848500002997753
+      },
+      {
+        "test": "test_quant.QuantTests.test_evpi",
+        "status": "passed",
+        "seconds": 6.540699996548938e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_impossible_evidence",
+        "status": "passed",
+        "seconds": 2.8352000072118244e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_invalid_rate",
+        "status": "passed",
+        "seconds": 1.9869999960064888e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_mc_reproducible_and_exact_ev",
+        "status": "passed",
+        "seconds": 0.0034726070000488107
+      },
+      {
+        "test": "test_quant.QuantTests.test_mc_seed_required",
+        "status": "passed",
+        "seconds": 3.0505000040648156e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_mcda_bounds",
+        "status": "passed",
+        "seconds": 2.8563000114445458e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_mcda_direction",
+        "status": "passed",
+        "seconds": 7.4138999934803e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_missing_units",
+        "status": "passed",
+        "seconds": 1.2888999890492414e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_negative_contribution_no_break_even",
+        "status": "passed",
+        "seconds": 3.6513999930321006e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_nonfinite",
+        "status": "passed",
+        "seconds": 1.6844999890963663e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_probability_sum",
+        "status": "passed",
+        "seconds": 2.172200015593262e-05
+      },
+      {
+        "test": "test_quant.QuantTests.test_unit_economics_known_answer",
+        "status": "passed",
+        "seconds": 0.00010178000002269982
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_aborted_project_requires_explicit_resume",
+        "status": "passed",
+        "seconds": 0.027073555000015403
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_all_eight_domain_plans_enter_research",
+        "status": "passed",
+        "seconds": 1.330129204000059
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_cost_before_mandate",
+        "status": "passed",
+        "seconds": 0.015767839000091044
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_cost_cannot_use_altered_mandate",
+        "status": "passed",
+        "seconds": 0.15638096700013193
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_cost_ledger_tamper_detected",
+        "status": "passed",
+        "seconds": 0.17337649899991447
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_dependencies_block_early_task",
+        "status": "passed",
+        "seconds": 0.4652772530000675
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_evaluation_cannot_change_predefined_criteria",
+        "status": "passed",
+        "seconds": 0.2429172849999759
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_evaluation_criteria_required_before_research",
+        "status": "passed",
+        "seconds": 0.16585699699999168
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_hold_blocks_work_and_persists",
+        "status": "passed",
+        "seconds": 0.1898322030001509
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_limited_tool_needs_fallback",
+        "status": "passed",
+        "seconds": 0.18005104799999572
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_nested_schema_failures_are_results",
+        "status": "passed",
+        "seconds": 0.0025291740000739082
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_reopen_does_not_hide_altered_task_output",
+        "status": "passed",
+        "seconds": 0.3770587379999597
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_review_must_explicitly_clear_critical_failures",
+        "status": "passed",
+        "seconds": 0.3344058729999233
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_stale_source_needs_explicit_resolution",
+        "status": "passed",
+        "seconds": 0.4266642219999994
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_task_ledger_tamper_detected",
+        "status": "passed",
+        "seconds": 0.22914910100007546
+      },
+      {
+        "test": "test_release.IntegrityRegressions.test_unavailable_api_without_fallback_blocks",
+        "status": "passed",
+        "seconds": 0.1769808550000107
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_altered_calculation_with_new_hash",
+        "status": "passed",
+        "seconds": 0.003566581000086444
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_bad_pointer_rejected",
+        "status": "passed",
+        "seconds": 0.0029420330001812545
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_calculation_claim_binding",
+        "status": "passed",
+        "seconds": 0.002841714999931355
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_correct_calculation_wrong_claim",
+        "status": "passed",
+        "seconds": 0.002880071999925349
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_reported_statistic_still_requires_support",
+        "status": "passed",
+        "seconds": 0.004212478999988889
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_same_forged_units_rejected",
+        "status": "passed",
+        "seconds": 0.0031715119998807495
+      },
+      {
+        "test": "test_release.NumericalProvenance.test_unbound_calculation_not_verification",
+        "status": "passed",
+        "seconds": 0.0026921740000034333
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_bad_python_detected",
+        "status": "passed",
+        "seconds": 0.13131831300006525
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_claude_adapter_is_required_and_validated",
+        "status": "passed",
+        "seconds": 0.17247319500006597
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_cloud_model_routing_guidance_is_linked_and_uses_native_auto",
+        "status": "passed",
+        "seconds": 0.045483787999955894
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_copilot_skill_and_agent_files_are_required",
+        "status": "passed",
+        "seconds": 0.04847968200010655
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_failed_initialization_has_no_ready",
+        "status": "passed",
+        "seconds": 0.12716997200004698
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_initialization_exact_message_and_stop",
+        "status": "passed",
+        "seconds": 0.19647909599984814
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_invalid_frontmatter_detected",
+        "status": "passed",
+        "seconds": 0.11898283599998649
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_missing_local_link_detected",
+        "status": "passed",
+        "seconds": 0.11892290700006924
+      },
+      {
+        "test": "test_release.ReleaseStructure.test_shipped_structure",
+        "status": "passed",
+        "seconds": 0.18724415199994837
+      },
+      {
+        "test": "test_v3.TestAdapters.test_schema_and_no_redirect",
+        "status": "passed",
+        "seconds": 0.0008787870001469855
+      },
+      {
+        "test": "test_v3.TestBudget.test_reserve_and_settle",
+        "status": "passed",
+        "seconds": 0.015321049999784009
+      },
+      {
+        "test": "test_v3.TestClaims.test_report_audit",
+        "status": "passed",
+        "seconds": 0.00011048300007132639
+      },
+      {
+        "test": "test_v3.TestDecision.test_cli_run_analysis",
+        "status": "passed",
+        "seconds": 0.00017960499985747447
+      },
+      {
+        "test": "test_v3.TestDecision.test_ecommerce",
+        "status": "passed",
+        "seconds": 2.773100004560547e-05
+      },
+      {
+        "test": "test_v3.TestDecision.test_mc",
+        "status": "passed",
+        "seconds": 0.0017136300000402116
+      },
+      {
+        "test": "test_v3.TestEvaluation.test_pair",
+        "status": "passed",
+        "seconds": 0.00010261200009153981
+      },
+      {
+        "test": "test_v3.TestGraph.test_duplicate_origins",
+        "status": "passed",
+        "seconds": 5.7263999906354e-05
+      },
+      {
+        "test": "test_v3.TestMethods.test_pilots",
+        "status": "passed",
+        "seconds": 8.156100011547096e-05
+      },
+      {
+        "test": "test_v3.TestRetrieval.test_bm25",
+        "status": "passed",
+        "seconds": 0.00015206400007627963
+      },
+      {
+        "test": "test_v3.TestRetrieval.test_coverage",
+        "status": "passed",
+        "seconds": 2.4316000008184346e-05
+      },
+      {
+        "test": "test_v3.TestRetrieval.test_queries_are_bounded_and_include_counterevidence",
+        "status": "passed",
+        "seconds": 5.191700006434985e-05
+      },
+      {
+        "test": "test_v3.TestRetrieval.test_url",
+        "status": "passed",
+        "seconds": 0.00020919799999319366
+      },
+      {
+        "test": "test_v3.TestScheduler.test_fixture_with_project",
+        "status": "passed",
+        "seconds": 0.011983431000089695
+      },
+      {
+        "test": "test_v3.TestScheduler.test_fixture_worker_is_explicitly_synthetic",
+        "status": "passed",
+        "seconds": 0.0006030099998497462
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_backup_quiescence_required",
+        "status": "passed",
+        "seconds": 5.87059998906625e-05
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_correlated_pd_validation",
+        "status": "passed",
+        "seconds": 0.0010740560001067934
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_disallow_unsafe_file_ingestion",
+        "status": "passed",
+        "seconds": 0.0004242259999500675
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_evsi_in_run_analysis",
+        "status": "passed",
+        "seconds": 0.0001291809999202087
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_evsi_model",
+        "status": "passed",
+        "seconds": 0.00010812000004989386
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_plain_text_and_html_ingestion",
+        "status": "passed",
+        "seconds": 0.0006523130000459787
+      },
+      {
+        "test": "test_v3_extended.Extended3.test_project_backup_restore_full_content",
+        "status": "passed",
+        "seconds": 0.16033613800004787
+      },
+      {
+        "test": "test_v3_scheduler_integration.SchedulerIntegration.test_blocked_critical_task_cannot_pass_gate",
+        "status": "passed",
+        "seconds": 0.15878747000010662
+      },
+      {
+        "test": "test_v3_scheduler_integration.SchedulerIntegration.test_fixture_dispatch_persists_output",
+        "status": "passed",
+        "seconds": 0.14704141399988657
+      },
+      {
+        "test": "test_v3_scheduler_integration.SchedulerIntegration.test_noncritical_skipped_has_impact",
+        "status": "passed",
+        "seconds": 0.17648064600007274
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_accepting_gap_defers_failed_capability_instead_of_fake_test",
+        "status": "passed",
+        "seconds": 0.13590956600000936
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_access_plan_mutation_and_missing_test_fail_closed",
+        "status": "passed",
+        "seconds": 0.15530167499991876
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_any_block_is_durable_and_resume_needs_scope_and_authorization",
+        "status": "passed",
+        "seconds": 0.15497997900001792
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_cli_structured_failure_returns_nonzero",
+        "status": "passed",
+        "seconds": 0.13404925000008916
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_external_tool_retry_requires_current_authorization_and_exact_block",
+        "status": "passed",
+        "seconds": 0.14429611200012005
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_failed_or_changed_test_does_not_count_as_available",
+        "status": "passed",
+        "seconds": 0.12974565600006827
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_gap_continuation_does_not_dispatch_task_requiring_deferred_access",
+        "status": "passed",
+        "seconds": 0.14005781400010164
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_guarded_metadata_failure_holds_project_without_retry",
+        "status": "passed",
+        "seconds": 0.14563024899985066
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_mcp_requires_verified_publisher_and_paid_approval",
+        "status": "passed",
+        "seconds": 0.13190995500008285
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_offline_needs_are_not_claimed_server_connections",
+        "status": "passed",
+        "seconds": 0.0008503260000907176
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_old_receipt_cannot_clear_new_retry_hold",
+        "status": "passed",
+        "seconds": 0.13930043400000613
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_retry_keeps_research_held_and_cannot_dispatch_twice",
+        "status": "passed",
+        "seconds": 0.16267733700010467
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_scholarly_research_is_stage_gated_and_probe_explicitly_bounded",
+        "status": "passed",
+        "seconds": 0.13540836999982275
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_successful_research_retains_query_and_result_receipt",
+        "status": "passed",
+        "seconds": 0.22149698499993065
+      },
+      {
+        "test": "test_v4_controls.AccessControls.test_unsuccessful_retry_creates_new_hold_without_implicit_retry",
+        "status": "passed",
+        "seconds": 0.17196879400012222
+      },
+      {
+        "test": "test_v4_controls.Compatibility.test_checkpoint_restore_never_silently_unpauses_work",
+        "status": "passed",
+        "seconds": 0.179413840000052
+      },
+      {
+        "test": "test_v4_controls.Compatibility.test_legacy_calculation_output_is_reproduced_without_silent_relabeling",
+        "status": "passed",
+        "seconds": 0.0009483199999067438
+      },
+      {
+        "test": "test_v4_controls.Compatibility.test_real_supplied_v1_project_migrates_with_full_restorable_backup",
+        "status": "passed",
+        "seconds": 1.2373868760000732
+      },
+      {
+        "test": "test_v4_controls.Compatibility.test_reversed_normal_clipping_is_rejected",
+        "status": "passed",
+        "seconds": 0.0010557080001944996
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_approved_observed_subagents_allow_disjoint_parallel_plan_only",
+        "status": "passed",
+        "seconds": 0.242099276999852
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_blocked_task_holds_whole_project_and_resume_is_explicit",
+        "status": "passed",
+        "seconds": 0.1668255650001811
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_coverage_cannot_claim_unretrieved_source",
+        "status": "passed",
+        "seconds": 0.15876535199981845
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_exclusion_accounting_and_independent_origin_threshold",
+        "status": "passed",
+        "seconds": 0.13335279400007494
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_parallel_planning_requires_observed_enabled_subagents",
+        "status": "passed",
+        "seconds": 0.1390855519998695
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_task_requires_real_handoff_shape_and_failed_retries_are_explicit",
+        "status": "passed",
+        "seconds": 0.15195117700000083
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_verify_requires_every_recorded_research_request_in_search_log",
+        "status": "passed",
+        "seconds": 0.24852093599997716
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_worker_access_block_cancels_siblings_and_persists_failure",
+        "status": "passed",
+        "seconds": 0.16170191599985628
+      },
+      {
+        "test": "test_v4_controls.CoverageAndTasks.test_worker_timeout_is_not_marked_success",
+        "status": "passed",
+        "seconds": 0.1397550169999704
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_changed_claim_invalidates_old_review",
+        "status": "passed",
+        "seconds": 0.0013688100000308623
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_delivery_gate_runs_report_audit_not_only_hashes",
+        "status": "passed",
+        "seconds": 0.2131893199998558
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_final_review_binds_exact_evidence",
+        "status": "passed",
+        "seconds": 0.25468743400006133
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_new_snapshot_hash_does_not_rebind_old_review",
+        "status": "passed",
+        "seconds": 0.0017167739999877085
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_review_packet_includes_late_quote_and_explicit_omissions",
+        "status": "passed",
+        "seconds": 0.0012801499999568478
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_review_packet_rejects_modified_registered_bytes",
+        "status": "passed",
+        "seconds": 0.0009130579999236943
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_review_receipt_must_match_exact_review_artifact",
+        "status": "passed",
+        "seconds": 0.005372692000037205
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_source_lineage_must_resolve",
+        "status": "passed",
+        "seconds": 0.0009699719998934597
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_stale_review_cannot_support_report",
+        "status": "passed",
+        "seconds": 0.0007442790001732646
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_structured_scope_and_uncertainty_are_required",
+        "status": "passed",
+        "seconds": 0.0010855030000129773
+      },
+      {
+        "test": "test_v4_controls.EvidenceAndDelivery.test_uncited_bullets_tables_quotes_and_missing_material_claim_fail",
+        "status": "passed",
+        "seconds": 0.0011366180001459725
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_disabled_feature_cannot_be_claimed_usable_or_irrelevant",
+        "status": "passed",
+        "seconds": 0.060709518000066964
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_enable_request_remains_blocked_until_verified_or_accepted",
+        "status": "passed",
+        "seconds": 0.09207360200002768
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_enabled_receipt_is_rechecked_before_dispatch",
+        "status": "passed",
+        "seconds": 0.14769316500019158
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_enablement_requires_every_standard_capability",
+        "status": "passed",
+        "seconds": 0.06491125100001227
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_explicit_stage_prevents_skipping_feature_review",
+        "status": "passed",
+        "seconds": 0.10052094700017733
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_feature_plan_mutation_invalidates_approval",
+        "status": "passed",
+        "seconds": 0.15427530699980707
+      },
+      {
+        "test": "test_v4_controls.FeatureEnablement.test_inventory_is_not_a_platform_availability_claim",
+        "status": "passed",
+        "seconds": 0.0006983709999985876
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_binary_brier_and_coverage",
+        "status": "passed",
+        "seconds": 0.0001108030000978033
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_duplicate_and_unknown_results_rejected",
+        "status": "passed",
+        "seconds": 5.446099999062426e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_duplicate_cases_rejected",
+        "status": "passed",
+        "seconds": 1.3249999938125256e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_duplicate_retrieval_cannot_inflate_recall",
+        "status": "passed",
+        "seconds": 2.2924000177226844e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_missing_failed_and_boolean_answers_are_not_correct",
+        "status": "passed",
+        "seconds": 4.3744999857153744e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_paired_case_sets_and_truth_must_match",
+        "status": "passed",
+        "seconds": 5.3028000138510833e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_paired_forged_correctness_rejected",
+        "status": "passed",
+        "seconds": 0.0003727109999545064
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_retrieval_metrics_include_missing_query",
+        "status": "passed",
+        "seconds": 8.086899993031693e-05
+      },
+      {
+        "test": "test_v4_foundations.Evaluations.test_uncalibrated_confidence_is_not_a_binary_outcome",
+        "status": "passed",
+        "seconds": 2.8601999929378508e-05
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_archive_path_aliases_and_case_collisions_rejected",
+        "status": "passed",
+        "seconds": 0.0017363539998314081
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_budget_persists_limit_and_actual_overrun",
+        "status": "passed",
+        "seconds": 0.009730755999953544
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_duplicate_backup_manifest_rejected_before_target_creation",
+        "status": "passed",
+        "seconds": 0.0006028699999660603
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_extraction_has_source_locations_and_truncation",
+        "status": "passed",
+        "seconds": 0.00048185099990405433
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_manifest_paths_are_portable_and_cannot_alias_directories",
+        "status": "passed",
+        "seconds": 0.00019340499989084492
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_manifest_total_is_bounded",
+        "status": "passed",
+        "seconds": 0.00025075000007745984
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_memory_corruption_is_not_silently_skipped",
+        "status": "passed",
+        "seconds": 0.00041195800008608785
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_memory_exact_scope_and_receipt_revalidation",
+        "status": "passed",
+        "seconds": 0.0029066209999655257
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_pdf_truncation_is_not_hidden",
+        "status": "passed",
+        "seconds": 0.0004922869998154056
+      },
+      {
+        "test": "test_v4_foundations.InputAndPersistence.test_strict_json_all_entrypoints",
+        "status": "passed",
+        "seconds": 0.0006106410000938922
+      },
+      {
+        "test": "test_v4_foundations.ProviderSchemas.test_cursor_and_metadata_provenance",
+        "status": "passed",
+        "seconds": 0.00038938500006224785
+      },
+      {
+        "test": "test_v4_foundations.ProviderSchemas.test_endpoint_prefix_confusion_is_rejected",
+        "status": "passed",
+        "seconds": 4.434499987837626e-05
+      },
+      {
+        "test": "test_v4_foundations.ProviderSchemas.test_http_body_uses_strict_json",
+        "status": "passed",
+        "seconds": 0.0002652620000844763
+      },
+      {
+        "test": "test_v4_foundations.ProviderSchemas.test_malformed_response_is_not_empty_success",
+        "status": "passed",
+        "seconds": 0.0005175339999823336
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_bm25_rejects_invalid_parameters",
+        "status": "passed",
+        "seconds": 7.721399992988154e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_boolean_weight_is_rejected",
+        "status": "passed",
+        "seconds": 1.47709999964718e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_canonical_url_preserves_semantic_ref_and_ipv6",
+        "status": "passed",
+        "seconds": 8.581700012655347e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_doi_aliases_and_lineage_collapse",
+        "status": "passed",
+        "seconds": 4.1211000052499e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_impossible_budget_and_malformed_synonyms_fail",
+        "status": "passed",
+        "seconds": 4.1220999946744996e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_infeasible_method_cannot_win",
+        "status": "passed",
+        "seconds": 4.022000007353199e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_long_lineage_does_not_depend_on_python_recursion_limit",
+        "status": "passed",
+        "seconds": 0.00445366600001762
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_missing_origin_never_becomes_independence",
+        "status": "passed",
+        "seconds": 3.440999989834381e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_negative_only_assessment_is_visible",
+        "status": "passed",
+        "seconds": 1.9157999986418872e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_query_budget_covers_all_dimensions_first",
+        "status": "passed",
+        "seconds": 2.807200007737265e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_query_budget_includes_counterevidence_fairly",
+        "status": "passed",
+        "seconds": 2.608900013001403e-05
+      },
+      {
+        "test": "test_v4_foundations.RetrievalAndMethods.test_unknown_cyclic_and_duplicate_lineage_fail",
+        "status": "passed",
+        "seconds": 5.4419999969468336e-05
+      },
+      {
+        "test": "test_v4_packaging.ReleasePayloadTests.test_explicit_payload_excludes_private_and_generated_data",
+        "status": "passed",
+        "seconds": 0.0036992110001392575
+      },
+      {
+        "test": "test_v4_packaging.ReleasePayloadTests.test_raw_zip_extra_member_is_not_hidden_by_manifest_filtering",
+        "status": "passed",
+        "seconds": 0.0009246849999726692
+      },
+      {
+        "test": "test_v4_packaging.ReleasePayloadTests.test_symlinks_are_rejected",
+        "status": "passed",
+        "seconds": 0.0007901169999513513
+      },
+      {
+        "test": "test_v4_packaging.ReleasePayloadTests.test_unsafe_zip_member_is_rejected_before_extraction",
+        "status": "passed",
+        "seconds": 0.0002534840000407712
+      },
+      {
+        "test": "test_v4_packaging.ReleasePayloadTests.test_validated_inventory_detects_change_addition_and_deletion",
+        "status": "passed",
+        "seconds": 0.0030235130000164645
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_critical_access_block_creates_hold",
+        "status": "passed",
+        "seconds": 0.012974895000070319
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_critical_failure_requires_authorization",
+        "status": "passed",
+        "seconds": 1.8857999975807616e-05
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_optional_access_block_does_not_create_global_hold",
+        "status": "passed",
+        "seconds": 0.019837544999973034
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_optional_failure_does_not_hold_everything",
+        "status": "passed",
+        "seconds": 2.36150001455826e-05
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_portable_profiles_are_packaged",
+        "status": "passed",
+        "seconds": 0.11111144899996361
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_security_violation_prevents_retry",
+        "status": "passed",
+        "seconds": 2.080000012938399e-05
+      },
+      {
+        "test": "test_v5.V5PolicyTests.test_unknown_classification_rejected",
+        "status": "passed",
+        "seconds": 2.7200999966225936e-05
+      },
+      {
+        "test": "test_v5.V5ProviderTests.test_gemini_grounding_is_only_source_lead",
+        "status": "passed",
+        "seconds": 2.9312999913599924e-05
+      },
+      {
+        "test": "test_v5.V5ProviderTests.test_invalid_model_path_rejected",
+        "status": "passed",
+        "seconds": 0.00016234999998232524
+      },
+      {
+        "test": "test_v5.V5ProviderTests.test_model_budget_guard",
+        "status": "passed",
+        "seconds": 0.005471057000022483
+      },
+      {
+        "test": "test_v5.V5ProviderTests.test_no_approval_is_not_bypassed_by_python",
+        "status": "passed",
+        "seconds": 0.00013429899991024286
+      },
+      {
+        "test": "test_v5.V5ProviderTests.test_openai_provider_mock_with_local_reservation",
+        "status": "passed",
+        "seconds": 0.01516933500010964
+      },
+      {
+        "test": "test_v5.V5SessionTests.test_actions_is_distinguished_from_sandbox",
+        "status": "passed",
+        "seconds": 2.6007999849753105e-05
+      },
+      {
+        "test": "test_v5.V5SessionTests.test_all_surfaces_have_recovery_guidance",
+        "status": "passed",
+        "seconds": 0.00012509400016824657
+      },
+      {
+        "test": "test_v5.V5SessionTests.test_invalid_surface_rejected",
+        "status": "passed",
+        "seconds": 2.3735000013402896e-05
+      },
+      {
+        "test": "test_v5.V5SessionTests.test_sandbox_long_running_no_fixed_timeout",
+        "status": "passed",
+        "seconds": 1.00050001492491e-05
+      },
+      {
+        "test": "test_v5.V5VerificationTests.test_assumed_financial_input_requires_uncertainty",
+        "status": "passed",
+        "seconds": 0.0003597110001010151
+      },
+      {
+        "test": "test_v5.V5VerificationTests.test_claim_numbers_present_no_automatic_truth",
+        "status": "passed",
+        "seconds": 4.28839998676267e-05
+      },
+      {
+        "test": "test_v5.V5VerificationTests.test_correct_financial_input_metadata",
+        "status": "passed",
+        "seconds": 1.5133000033529243e-05
+      },
+      {
+        "test": "test_v5.V5VerificationTests.test_lexical_check_never_claims_entailment",
+        "status": "passed",
+        "seconds": 2.548699990256864e-05
+      },
+      {
+        "test": "test_v5.V5VerificationTests.test_observed_input_needs_source_hash",
+        "status": "passed",
+        "seconds": 1.2928999922223738e-05
+      }
+    ]
+  },
+  "synthetic_lifecycle": {
+    "state": "COMPLETE",
+    "event_chain": "consistent",
+    "sealed_artifacts": 16,
+    "evidence": {
+      "ok": true,
+      "verification_level": "mechanical_consistency_only",
+      "errors": [],
+      "warnings": [
+        {
+          "code": "local_source",
+          "path": "sources[0]",
+          "message": "Local evidence is user/fixture supplied; authenticity requires independent review"
+        },
+        {
+          "code": "semantic_limit",
+          "path": "$",
+          "message": "Excerpts, identities, origin groups and URLs remain operator supplied. Matching text and arithmetic do not prove entailment, authenticity, or completeness."
+        }
+      ],
+      "metrics": {
+        "sources": 1,
+        "claims": 1,
+        "origin_groups": 1,
+        "origin_clusters": 1,
+        "independently_assessed": 1,
+        "reproduced_numeric_claims": 0
+      }
+    },
+    "warning": "Receipts detect accidental changes, not a malicious filesystem owner. No external truth or model compliance guaranteed.",
+    "final_state": "COMPLETE"
+  },
+  "example_calculations": [
+    {
+      "input": "bayes.json",
+      "kind": "bayes",
+      "input_sha256": "805d2af3e8d009be544b5b762110e89f0ce8f83aef7e59afbb3847dda0a2d499",
+      "status": "executed"
+    },
+    {
+      "input": "cashflow.json",
+      "kind": "cashflow",
+      "input_sha256": "0a5cd2a885f12188e44b495c9b74a1f76e327f76c3b660035e4a84184ae93e3e",
+      "status": "executed"
+    },
+    {
+      "input": "correlated_simulation.json",
+      "kind": "correlated_simulation",
+      "input_sha256": "9365e950006d582c11a54051e32d96cc9bd29183e91950c97cf7f28006d68b7f",
+      "status": "executed"
+    },
+    {
+      "input": "ecommerce_economics.json",
+      "kind": "ecommerce_economics",
+      "input_sha256": "e5fbf7429305b8c7522d8985991ce64ac29d6c23a2e492d7bbbca0fc37e792e7",
+      "status": "executed"
+    },
+    {
+      "input": "evpi.json",
+      "kind": "evpi",
+      "input_sha256": "71d1d7e3fa92b446daf45a352e302da77af9e70af9b6f486d844c93812edc9f5",
+      "status": "executed"
+    },
+    {
+      "input": "evsi_binary.json",
+      "kind": "evsi_binary",
+      "input_sha256": "cd893e248090125be00d78b86e9da0789fe99ef26794939fab85b1e9de6ae2e3",
+      "status": "executed"
+    },
+    {
+      "input": "mcda.json",
+      "kind": "mcda",
+      "input_sha256": "8e665969c1a3234a9b6f20674e6a6f9a5b7df25c8e39aa111c47811414bc7fd5",
+      "status": "executed"
+    },
+    {
+      "input": "monte_carlo.json",
+      "kind": "monte_carlo",
+      "input_sha256": "ba7c5f69e084984f647128323649f86f6a8ad27161bfee4edcc6d5e58ab6402b",
+      "status": "executed"
+    },
+    {
+      "input": "reverse_stress.json",
+      "kind": "reverse_stress",
+      "input_sha256": "84c2f649170359b132903a90f6b53b15c1636911a76d238e0202052e20e3d6e1",
+      "status": "executed"
+    },
+    {
+      "input": "unit_economics.json",
+      "kind": "unit_economics",
+      "input_sha256": "7e0a191959d74ee5d067ea5ba9baca2acc904ad324c83a33fcb892e7a40a4d9d",
+      "status": "executed"
+    }
+  ],
+  "v3_v4_comparison": {
+    "exit_code": 0,
+    "cases": 9,
+    "all_expectations_met": true,
+    "results": [
+      {
+        "case": "query_dimension_fairness",
+        "fixture": {
+          "question": "Synthetic evaluation question",
+          "coverage": [
+            "cost",
+            "access",
+            "safety"
+          ],
+          "max_queries": 3
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "dimensions": [
+            "cost"
+          ],
+          "query_count": 3
+        },
+        "current_v4": {
+          "accepted": true,
+          "dimensions": [
+            "cost",
+            "access",
+            "safety"
+          ],
+          "query_count": 3
+        },
+        "expectation": "v3 covers 1 dimension; v4 covers exactly cost/access/safety within 3 queries.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+          "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "untraced_origin_lineage",
+        "fixture": {
+          "required": [
+            "effect"
+          ],
+          "observations": [
+            {
+              "dimension": "effect",
+              "source_id": "S1"
+            },
+            {
+              "dimension": "effect",
+              "source_id": "S2"
+            }
+          ]
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "distinct_origin_count": 2,
+          "status": "multiple_origins",
+          "untraced_source_ids": []
+        },
+        "current_v4": {
+          "accepted": true,
+          "distinct_origin_count": 0,
+          "status": "untraced",
+          "untraced_source_ids": [
+            "S1",
+            "S2"
+          ]
+        },
+        "expectation": "v3 counts 2 origins; v4 counts 0, status untraced.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+          "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "duplicate_evaluation_result_ids",
+        "fixture": {
+          "cases": [
+            {
+              "id": "C1",
+              "expected": "yes"
+            }
+          ],
+          "results": [
+            {
+              "id": "C1",
+              "answer": "no"
+            },
+            {
+              "id": "C1",
+              "answer": "yes"
+            }
+          ]
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "accuracy_over_all": 1.0,
+          "correct": true
+        },
+        "current_v4": {
+          "accepted": false,
+          "error": "Duplicate result ID: C1",
+          "error_type": "AtlasError"
+        },
+        "expectation": "v3 accepts duplicate results; v4 raises exactly AtlasError.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "b19b8c5be8fc99752dcdfafcc6c3b485490647dff7a61e11b9d50f9a243744ce",
+          "current_source_sha256": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "duplicate_json_keys",
+        "fixture": {
+          "content": "{\"status\":\"ok\",\"status\":\"accepted\"}"
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "parsed_status": "accepted"
+        },
+        "current_v4": {
+          "accepted": false,
+          "error": "Duplicate JSON key: status",
+          "error_type": "AtlasError"
+        },
+        "expectation": "v3 accepts duplicate JSON keys; v4 raises exactly AtlasError.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "eb10438d4d0aaae17891607ebd59b2adcaa7f13abee07b68e961fefb290d5a46",
+          "current_source_sha256": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "healthy_queries",
+        "fixture": {
+          "question": "Synthetic",
+          "coverage": [
+            "cost",
+            "access",
+            "safety"
+          ],
+          "max_queries": 9
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "dimensions": [
+            "cost",
+            "access",
+            "safety"
+          ],
+          "query_count": 9
+        },
+        "current_v4": {
+          "accepted": true,
+          "dimensions": [
+            "cost",
+            "access",
+            "safety"
+          ],
+          "query_count": 9
+        },
+        "expectation": "Both accept 9 queries covering exactly cost/access/safety.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+          "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "healthy_evaluation",
+        "fixture": {
+          "cases": [
+            {
+              "id": "C1",
+              "expected": "yes"
+            }
+          ],
+          "results": [
+            {
+              "id": "C1",
+              "answer": "yes"
+            }
+          ]
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "accuracy_over_all": 1.0,
+          "correct": true
+        },
+        "current_v4": {
+          "accepted": true,
+          "accuracy_over_all": 1.0,
+          "correct": true
+        },
+        "expectation": "Both accept unique correct answer with accuracy_over_all exactly 1.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "b19b8c5be8fc99752dcdfafcc6c3b485490647dff7a61e11b9d50f9a243744ce",
+          "current_source_sha256": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "healthy_json",
+        "fixture": {
+          "content": "{\"status\":\"ok\"}"
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "parsed_status": "ok"
+        },
+        "current_v4": {
+          "accepted": true,
+          "parsed_status": "ok"
+        },
+        "expectation": "Both accept unique JSON key and preserve status exactly ok.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "eb10438d4d0aaae17891607ebd59b2adcaa7f13abee07b68e961fefb290d5a46",
+          "current_source_sha256": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "healthy_provider",
+        "fixture": {
+          "response": {
+            "results": [
+              {
+                "id": "https://openalex.org/W1",
+                "title": "Synthetic fixture",
+                "publication_year": 2024
+              }
+            ]
+          }
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "titles": [
+            "Synthetic fixture"
+          ],
+          "total_returned": 1
+        },
+        "current_v4": {
+          "accepted": true,
+          "titles": [
+            "Synthetic fixture"
+          ],
+          "total_returned": 1
+        },
+        "expectation": "Both return exactly one metadata item titled Synthetic fixture.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "9e4350b92d69c418305c6f450fe29c560e284a07a509eff3a8e4469c197d2ff8",
+          "current_source_sha256": "efde260f38607b3b498b96f64cc5094bbb162c68d55bded03613e4b627ec37c3"
+        },
+        "expectation_met": true
+      },
+      {
+        "case": "malformed_provider",
+        "fixture": {
+          "response": {}
+        },
+        "baseline_v3": {
+          "accepted": true,
+          "titles": [],
+          "total_returned": 0
+        },
+        "current_v4": {
+          "accepted": false,
+          "error": "Provider schema missing the result list; this is not an empty search",
+          "error_type": "AtlasError"
+        },
+        "expectation": "v3 accepts {} as zero results; v4 raises exactly AtlasError.",
+        "execution": {
+          "baseline_version": "3.0.0",
+          "current_version": "5.0.0",
+          "interpreter": "/opt/pyvenv/bin/python",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+          "baseline_source_sha256": "9e4350b92d69c418305c6f450fe29c560e284a07a509eff3a8e4469c197d2ff8",
+          "current_source_sha256": "efde260f38607b3b498b96f64cc5094bbb162c68d55bded03613e4b627ec37c3"
+        },
+        "expectation_met": true
+      }
+    ],
+    "stdout": "{\n  \"cases\": 9,\n  \"all_expectations_met\": true\n}\n",
+    "stderr": ""
+  },
+  "baseline_audit": {
+    "files": 147,
+    "supplied_repository_files": 107,
+    "embedded_historical_files": 40,
+    "all_hashes_match": true,
+    "v4_release_hashes_validated_against_immutable_zip": true,
+    "current_v5_files_compared_to_v4": false
+  },
+  "historical_prototype_comparison": {
+    "baseline": "Immutable historical Claude prototype, not supplied Copilot v3",
+    "exit_code": 0,
+    "cases": 15,
+    "all_expected": true,
+    "stdout": "{\n  \"path\": \"/mnt/data/atlas_v5_work/ATLAS/reports/paired_controls.json\",\n  \"cases\": 15,\n  \"all_upgraded_expected\": true\n}\n",
+    "stderr": ""
+  },
+  "validated_inputs": {
+    ".claude/agents/adversarial-reviewer.md": {
+      "bytes": 683,
+      "sha256": "ee2ebaf3b4fafeee6d91eaddc1d2d1d79ff15155b7d3cb9c81f82089fa021354"
+    },
+    ".claude/agents/domain-researcher.md": {
+      "bytes": 1974,
+      "sha256": "21090c5051e8cccb2403a4b688ae5b37fecd7f9e09f708fd917f9417f8d2312a"
+    },
+    ".claude/agents/evidence-reviewer.md": {
+      "bytes": 664,
+      "sha256": "06db97353be4c16ee5ab8378cf49be72f2ff0d7848973e3fd84261f52a3674bf"
+    },
+    ".claude/agents/methodology-architect.md": {
+      "bytes": 2082,
+      "sha256": "4b7b9f0fb5ed4b9c76db9652d582fd0598e0d8820568e98a891c4f1555111c48"
+    },
+    ".claude/agents/quantitative-analyst.md": {
+      "bytes": 1638,
+      "sha256": "2ef9fa0dbf13ee5410d31c6f78f0d4c0a3c79984f2712f9e7cf4096240f57ee8"
+    },
+    ".claude/agents/research-coordinator.md": {
+      "bytes": 3318,
+      "sha256": "9b7cffd061128cd1a9f20be51f876bc4a31c27eb551c062cbb7d4142a5263270"
+    },
+    ".claude/agents/source-intelligence-researcher.md": {
+      "bytes": 1923,
+      "sha256": "abdb20ff8a615dfd09b76c676a4009d56745f70085caa828bb73428e936d8582"
+    },
+    ".claude/agents/tool-integration-architect.md": {
+      "bytes": 1791,
+      "sha256": "0abc9d1851239df001aa6ea37104aba7bc4b0b2f53995a1b46d847a36a223475"
+    },
+    ".claude/skills/atlas-audit/SKILL.md": {
+      "bytes": 2099,
+      "sha256": "b9d4121440fdcdfd4cf69a742fe3fd0f3041a976376704c3af1f9c7cdd9037b5"
+    },
+    ".claude/skills/atlas-deliver/SKILL.md": {
+      "bytes": 2089,
+      "sha256": "a0218f0c2bce890a905ea638535323baf4b7df996b92761a40f4f24095e4f019"
+    },
+    ".claude/skills/atlas-discover/SKILL.md": {
+      "bytes": 2133,
+      "sha256": "a5644c16f37ce43ef90acb1e5c85b80ce4880428886698b8b7dbaf9345c71994"
+    },
+    ".claude/skills/atlas-enable/SKILL.md": {
+      "bytes": 2528,
+      "sha256": "ecdcd0f239ae1ad95b4237d4d041794df85d4374fb4c0cce709284f4d8d89f4e"
+    },
+    ".claude/skills/atlas-evaluate/SKILL.md": {
+      "bytes": 1993,
+      "sha256": "d19e91f5a35bbf68061fde88e7fcdcbba724ba8dda663d3607b3ad2722c287ac"
+    },
+    ".claude/skills/atlas-init/SKILL.md": {
+      "bytes": 509,
+      "sha256": "af3bbe776f7a2e07301aa2fca846a6889a7f7db7649d1fed0caf085c3e4980b9"
+    },
+    ".claude/skills/atlas-meta/SKILL.md": {
+      "bytes": 1559,
+      "sha256": "8ae92969c092cbb9562a4415f6effc0bbd2bacfcab8fd369789f17b88fe652d8"
+    },
+    ".claude/skills/atlas-research/SKILL.md": {
+      "bytes": 1524,
+      "sha256": "0012edacfc25b08fd70a3e648d4b3c2287875c3646f5ac98c62b0efaba54df9c"
+    },
+    ".claude/skills/atlas-run/SKILL.md": {
+      "bytes": 2185,
+      "sha256": "6ff3d4ed65c198ef11b701c5f9394b03f3ef84759747a077e6fe14072749bd50"
+    },
+    ".github/agents/adversarial-reviewer.agent.md": {
+      "bytes": 685,
+      "sha256": "819e708e827902f5bc83f5876a587afe7027377502b760056f0b863574364ad5"
+    },
+    ".github/agents/domain-researcher.agent.md": {
+      "bytes": 1981,
+      "sha256": "1ae5cafd0fda541b93ef579e94432696957282e4bc6fbafb846742657ee2e42e"
+    },
+    ".github/agents/evidence-reviewer.agent.md": {
+      "bytes": 666,
+      "sha256": "a2c378620774948e800f99293b7793aa589b1b9ec2fc580c746db9e1008a50c6"
+    },
+    ".github/agents/methodology-architect.agent.md": {
+      "bytes": 2089,
+      "sha256": "17b16270d3ba97a09c6ec398afe611e73d215a155e90cc2ebdc2b9ec5bc2c9d7"
+    },
+    ".github/agents/quantitative-analyst.agent.md": {
+      "bytes": 1645,
+      "sha256": "6e2e1fc6e5b215eaf5b9fc234d9e07e84bcbeeafb3179268f67855cee1448baa"
+    },
+    ".github/agents/research-coordinator.agent.md": {
+      "bytes": 3322,
+      "sha256": "8188d31b59031fab943fe2afdccec9d4bf8466e4c7706eebe06ce6f3fc5ddefe"
+    },
+    ".github/agents/source-intelligence-researcher.agent.md": {
+      "bytes": 1930,
+      "sha256": "cf93e5b8c53c0b74d644a5ccdc047529a9b96f707bd38efc3dd9b096a8b98c16"
+    },
+    ".github/agents/tool-integration-architect.agent.md": {
+      "bytes": 1798,
+      "sha256": "562846af2f8c4bdede871f2cb01b223491a3653ee0e860af88c0d2e5c144c336"
+    },
+    ".github/copilot-instructions.md": {
+      "bytes": 2765,
+      "sha256": "5c0341c81c035bde4053cd740211107a3de28005b5632524b5cb14895e531f0c"
+    },
+    ".github/skills/atlas-audit/SKILL.md": {
+      "bytes": 2099,
+      "sha256": "b9d4121440fdcdfd4cf69a742fe3fd0f3041a976376704c3af1f9c7cdd9037b5"
+    },
+    ".github/skills/atlas-deliver/SKILL.md": {
+      "bytes": 2089,
+      "sha256": "a0218f0c2bce890a905ea638535323baf4b7df996b92761a40f4f24095e4f019"
+    },
+    ".github/skills/atlas-discover/SKILL.md": {
+      "bytes": 2133,
+      "sha256": "a5644c16f37ce43ef90acb1e5c85b80ce4880428886698b8b7dbaf9345c71994"
+    },
+    ".github/skills/atlas-enable/SKILL.md": {
+      "bytes": 2528,
+      "sha256": "ecdcd0f239ae1ad95b4237d4d041794df85d4374fb4c0cce709284f4d8d89f4e"
+    },
+    ".github/skills/atlas-evaluate/SKILL.md": {
+      "bytes": 1993,
+      "sha256": "d19e91f5a35bbf68061fde88e7fcdcbba724ba8dda663d3607b3ad2722c287ac"
+    },
+    ".github/skills/atlas-init/SKILL.md": {
+      "bytes": 509,
+      "sha256": "af3bbe776f7a2e07301aa2fca846a6889a7f7db7649d1fed0caf085c3e4980b9"
+    },
+    ".github/skills/atlas-meta/SKILL.md": {
+      "bytes": 1559,
+      "sha256": "8ae92969c092cbb9562a4415f6effc0bbd2bacfcab8fd369789f17b88fe652d8"
+    },
+    ".github/skills/atlas-research/SKILL.md": {
+      "bytes": 1524,
+      "sha256": "0012edacfc25b08fd70a3e648d4b3c2287875c3646f5ac98c62b0efaba54df9c"
+    },
+    ".github/skills/atlas-run/SKILL.md": {
+      "bytes": 2185,
+      "sha256": "6ff3d4ed65c198ef11b701c5f9394b03f3ef84759747a077e6fe14072749bd50"
+    },
+    ".gitignore": {
+      "bytes": 156,
+      "sha256": "b72ffeec164dba2852e39e9271c3d68081662e7f53f32487453732a2cd172181"
+    },
+    "AGENTS.md": {
+      "bytes": 11500,
+      "sha256": "d7d71fa4ca0d34ef6bf5cf1280fbdc03d2c28e0b6c0612f8bcd23710f134ec46"
+    },
+    "CLAUDE.md": {
+      "bytes": 1060,
+      "sha256": "8fd893331dce1804999f7cd92c6751684bf44d697bbb51497819f8c362d6e5f5"
+    },
+    "README.md": {
+      "bytes": 4652,
+      "sha256": "4343c579bd92c6df521080731c7174cbf92d1ac6cce642495e621aab67928ba1"
+    },
+    "atlas/__init__.py": {
+      "bytes": 112,
+      "sha256": "d53bbe17ddde13258695178e442583e3a63c5c3a6748638085f167257be185e9"
+    },
+    "atlas/__main__.py": {
+      "bytes": 17790,
+      "sha256": "2cc62969edd28475ed10509cd9ccb5b73d58c8735da694befac8febf87bd3096"
+    },
+    "atlas/access.py": {
+      "bytes": 6536,
+      "sha256": "430c390430cca72c015a8a5532e6ae80d78a99906f4909f4a8e08d3a723a1a8f"
+    },
+    "atlas/adapters.py": {
+      "bytes": 9737,
+      "sha256": "efde260f38607b3b498b96f64cc5094bbb162c68d55bded03613e4b627ec37c3"
+    },
+    "atlas/analysis_inputs.py": {
+      "bytes": 1719,
+      "sha256": "25a030df60b867d079b7ba575cc40c8b2bf99f25a29c7f763157ce9fbd71c986"
+    },
+    "atlas/archive.py": {
+      "bytes": 3897,
+      "sha256": "0149d2d473fe16066a199a1043499cedc8b9c16ed57a0b53a3cfe8d092ee51e0"
+    },
+    "atlas/budget.py": {
+      "bytes": 5686,
+      "sha256": "6f676fd4cd7aa3338514f7bc639ff62698713858ba40e64eebb8006b79ea3c2d"
+    },
+    "atlas/claim_checks.py": {
+      "bytes": 1507,
+      "sha256": "d236add8b09b4e63846882bb3ffb5541681a628592d778d68283e5785c61c9e5"
+    },
+    "atlas/continuation.py": {
+      "bytes": 1945,
+      "sha256": "1e86915e1ff3708bccab6fc08ce0b8b25055186456ed2566a7d4657813e3dde8"
+    },
+    "atlas/contracts.py": {
+      "bytes": 8237,
+      "sha256": "e944772a626efe3ea2602dfb78724c2fa14f1ce1de9ffd8ceb3f6a69843e7d62"
+    },
+    "atlas/decision.py": {
+      "bytes": 8408,
+      "sha256": "ed9826133d69c0124bedb24902fde427882b80cce5e09230481e1e9247feca34"
+    },
+    "atlas/demo.py": {
+      "bytes": 11160,
+      "sha256": "dd4afc420146fbdfb103bd18af3341ebb2f70ba82909ba183297859c107b3278"
+    },
+    "atlas/dispatch.py": {
+      "bytes": 14972,
+      "sha256": "2363a05782303b71205b33ddb6d97cc264746454f157e7e991e71306529cc366"
+    },
+    "atlas/enablement.py": {
+      "bytes": 5710,
+      "sha256": "f224e39313c4e347a0eabcad257f00a09d48c053a9207e6781ce18ddfc9838f0"
+    },
+    "atlas/evaluation.py": {
+      "bytes": 7148,
+      "sha256": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604"
+    },
+    "atlas/evidence.py": {
+      "bytes": 12621,
+      "sha256": "50bd90b3fee1074ae55392576ef7ccd7023d7f134a5916b4e0d010025a7fbcb3"
+    },
+    "atlas/experiment.py": {
+      "bytes": 1351,
+      "sha256": "2614ff35d215d8f3ad1f132b8931ecc52d5aa37f86f0ef839284449d8751384f"
+    },
+    "atlas/failures.py": {
+      "bytes": 752,
+      "sha256": "a400192af5af0b6453437687497078c46145af0bdfb64f4c430deda4dd126552"
+    },
+    "atlas/ingest.py": {
+      "bytes": 4684,
+      "sha256": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+    },
+    "atlas/intake.py": {
+      "bytes": 2604,
+      "sha256": "d3ffe986e779e9a7c6ba1c71f2feee934f6ab2715af9b724c0ed2cd6788257d5"
+    },
+    "atlas/integrations.py": {
+      "bytes": 2534,
+      "sha256": "c7ff62c0ac42d9f3ee239c033f296ad1f7b1270c8e7ef484ea66c23ed54f5154"
+    },
+    "atlas/io.py": {
+      "bytes": 3825,
+      "sha256": "2c91a2cfa6453bb655a66cde490dceabebe0b24af8f2ac7a4d2107e6900f1a75"
+    },
+    "atlas/memory.py": {
+      "bytes": 3792,
+      "sha256": "ac6b9dc439712bbeeaa491e86b3605e0dd0c1d36c7f39f3d7fe3fb5bfcfa117f"
+    },
+    "atlas/memory_search.py": {
+      "bytes": 1212,
+      "sha256": "01ad14f508199dda14ca20e15a3c597fb816299b0acb1f77393d0297520d31f4"
+    },
+    "atlas/methodology.py": {
+      "bytes": 2949,
+      "sha256": "f305921f191f334e359b48babcc390b93a3eedd0ab779c619300c6814a3eb718"
+    },
+    "atlas/model_research.py": {
+      "bytes": 6737,
+      "sha256": "524443d2a3ab1eacab17716917feeebdfc26da8317fb1af32b443535024fda69"
+    },
+    "atlas/project.py": {
+      "bytes": 51368,
+      "sha256": "835edbffd10c184553eb19f4e3b7dcecac57bf4ddb3968cedd752047dad76cd4"
+    },
+    "atlas/project_archive.py": {
+      "bytes": 4391,
+      "sha256": "42309116d56d327147839dd40b284dff9d0b87e5bbfa4aeedd3ee50ca9bb58dd"
+    },
+    "atlas/quant.py": {
+      "bytes": 11720,
+      "sha256": "377f9155a7b1bd2dbabf42034006d4f8def931359389d1978c3ce2bc02d60e38"
+    },
+    "atlas/retrieval.py": {
+      "bytes": 7457,
+      "sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+    },
+    "atlas/scheduler.py": {
+      "bytes": 4937,
+      "sha256": "6a37af02809fd61116761ea837dc5c64de39baf50dfdb2edd436115c80986dd5"
+    },
+    "atlas/session.py": {
+      "bytes": 2480,
+      "sha256": "b2c0161a73946646a9f149a172e62942f7d94c6fbcbb6f7dd9aa334b5c1be53c"
+    },
+    "atlas/sourcegraph.py": {
+      "bytes": 3758,
+      "sha256": "5dd8b44ab1793705a45313574e7eaacd55504de0ec3efbe3cf840538726a466c"
+    },
+    "atlas/structure.py": {
+      "bytes": 7825,
+      "sha256": "2fbff861fbde86b5b7d3ce2acc9ac8730ac918d8cf23be095cd1cd10d02692f1"
+    },
+    "atlas/verification.py": {
+      "bytes": 9094,
+      "sha256": "5a95e6406a8a4753ce7f773fa3de51ce0347e9beff9776a27c9f1e1fa398457e"
+    },
+    "benchmarks/PROTOCOL.md": {
+      "bytes": 6923,
+      "sha256": "6af9744f447be605d87416e84f4b4a510054723d5594581bd5493ffba5bb5757"
+    },
+    "benchmarks/cases.json": {
+      "bytes": 5640,
+      "sha256": "d734e1d5c5e00d82e0be4fe917666987abfaeaa206d4ffa5511824c8e9b1c19f"
+    },
+    "config/integrations.json": {
+      "bytes": 24088,
+      "sha256": "3c1d06cce23f1d9a97a0f5e1130a8c637cd99ef38b79a8402c6615fb5d3afb0a"
+    },
+    "docs/ACCESS.md": {
+      "bytes": 13377,
+      "sha256": "d2472fdbf75b9a92379ef11d0e20a6ebb3680996da92660eb8b7a166c3482f50"
+    },
+    "docs/ATLAS5.md": {
+      "bytes": 2758,
+      "sha256": "9ae71ad6d7938ad2ad4937da778a4f3c041cef9e00145de9613cf6c376d89785"
+    },
+    "docs/ATLAS5_IMPLEMENTATION_MATRIX.csv": {
+      "bytes": 8266,
+      "sha256": "1792db5ffe486c7c6a5dd3e13d2d9572e33bd912fe3c0bd49eaf8868da16a74a"
+    },
+    "docs/COPILOT.md": {
+      "bytes": 7876,
+      "sha256": "29dd8500dc8a53ad0b7ffe5192e88fb7c38ab3e22ecc4bde0e5c9f87c6977d60"
+    },
+    "docs/IMPLEMENTATION_STATUS.md": {
+      "bytes": 4651,
+      "sha256": "8f28616492f3a01ad4bf5349fb455af47f083376c136f9b4ae1035731a20d6bd"
+    },
+    "docs/INTEGRATIONS.md": {
+      "bytes": 20780,
+      "sha256": "127fdf47f39ae876454e762330ce25160ce15103829b6f7de52d4d31b304e311"
+    },
+    "docs/MIGRATION.md": {
+      "bytes": 3651,
+      "sha256": "681249f833438b909ec96d911e09953716806932464166d3734830d72da07d8d"
+    },
+    "docs/MODEL_ROUTING.md": {
+      "bytes": 3624,
+      "sha256": "d5f7d41a94791f5c2f8414fd79f645f9af9da53cb338cc5bd899633d08f1e6b1"
+    },
+    "docs/QUICKSTART.md": {
+      "bytes": 2555,
+      "sha256": "76046160be8e4eae1258589bcce8063053ef4b9b2e9b315c53957f0b955375cf"
+    },
+    "docs/SCHEMAS.md": {
+      "bytes": 12127,
+      "sha256": "90b406b7d0e9df876a09986c38590d1c7a1268e7b0f956a1cfb220a0d633d5ff"
+    },
+    "docs/SECURITY.md": {
+      "bytes": 5500,
+      "sha256": "3006237ba5fe124a516b7df7369d252fa5f03b696ed3ebdf6b0eab65a1b6effb"
+    },
+    "docs/SESSION_ENVIRONMENTS.md": {
+      "bytes": 1699,
+      "sha256": "29e67c47b5a63bb997040638b393cff7aeec14d330f011616bf08bd3fd4e025d"
+    },
+    "docs/UPGRADE_MATRIX_106.csv": {
+      "bytes": 15472,
+      "sha256": "a4a202f72f30593c72d680830710e89f796b00604d2763b1107dddf5a277faab"
+    },
+    "docs/UPGRADE_ROADMAP.md": {
+      "bytes": 3812,
+      "sha256": "ea3e526396f944a2d9fdaac870d0c84d1134d0a376aaa1d593118b782a17fdd1"
+    },
+    "docs/USAGE.md": {
+      "bytes": 11870,
+      "sha256": "a28ed13997463d5b7db10592739b76ae1cb13d2cd9d4017cadcd3171c9c9c020"
+    },
+    "docs/V3_QUICKSTART.md": {
+      "bytes": 3930,
+      "sha256": "cf5a7a9dbee47fc683dad47d3ba2d37fe6c9347db831aa13d8495ccac9e686f1"
+    },
+    "examples/README.md": {
+      "bytes": 1283,
+      "sha256": "395a88f7abf791edae9cab1f8f95292116d0d6ef04a65b8034d11edb794b5dd0"
+    },
+    "examples/bayes.json": {
+      "bytes": 202,
+      "sha256": "bbd1e21d8fd7dcea89128ebf9fcc3f0b84ef1335676016b45b445227af825ca2"
+    },
+    "examples/cashflow.json": {
+      "bytes": 424,
+      "sha256": "b494027e62e9f5ecf025b089c9ac2ffaae821f6800b4803d86a76062354209d6"
+    },
+    "examples/correlated_simulation.json": {
+      "bytes": 573,
+      "sha256": "418967f11c53efe47cc1552adaaf0d9fa2062a3db8d20fcfcb6b61bed827cf74"
+    },
+    "examples/ecommerce_economics.json": {
+      "bytes": 646,
+      "sha256": "d4bf1a9d2a54f660c5516911f4066901beef9738d0122116ff7536aa2df77780"
+    },
+    "examples/evpi.json": {
+      "bytes": 349,
+      "sha256": "101a8046c287662365f281bc81b3efdf585a77721ea7df57c626871e72dc72af"
+    },
+    "examples/evsi_binary.json": {
+      "bytes": 298,
+      "sha256": "935b121712aaa32e3b2055e9039d139dbac886d0c9fc4cd29e2b9bccb5459963"
+    },
+    "examples/mcda.json": {
+      "bytes": 634,
+      "sha256": "7afd1a670b54f88609c563f521d600e45885a5703a4dbbe36507fd95a03b4033"
+    },
+    "examples/monte_carlo.json": {
+      "bytes": 357,
+      "sha256": "e4c854ea8dec243770f0dd987f0661ffabfcdcc264030909026d6ef954d8a98f"
+    },
+    "examples/reverse_stress.json": {
+      "bytes": 199,
+      "sha256": "966ec7b0b11519f09d1a781b688bda9def3fb3fde9862425af1da9d8b00834fa"
+    },
+    "examples/unit_economics.json": {
+      "bytes": 572,
+      "sha256": "b21c88d80e64e1d8b25505227b46f845e82ea08664884768a388097c6a4af82f"
+    },
+    "memory/README.md": {
+      "bytes": 876,
+      "sha256": "bb05c8983c2ea1eefed3d4a85f59002042f777f223e03fc6f3a093efa70a8407"
+    },
+    "methods/EVALUATION.md": {
+      "bytes": 1700,
+      "sha256": "135b7dd1d72969d064c960c79cc682fb2210cf9b9f0c8449e5bc60d51eaa1bb8"
+    },
+    "methods/INTAKE.md": {
+      "bytes": 2319,
+      "sha256": "0e07c8eb9298ea24cff70593f82d8e4f216a5c9d8f94dfff7601cdba8c2e5771"
+    },
+    "methods/ORCHESTRATION.md": {
+      "bytes": 4399,
+      "sha256": "4e587827177688a6da0cafcd024932c179eead831539af50b0301a1cd7050fb3"
+    },
+    "methods/RESEARCH_PROTOCOL.md": {
+      "bytes": 9643,
+      "sha256": "8252c8cdcfd0a870697c23634b858dfb1766aad78f3d4b2ef93d2645de73c722"
+    },
+    "methods/TOOL_DISCOVERY.md": {
+      "bytes": 1753,
+      "sha256": "a35381e4a4f74f916fe29afb4e85622377f2466b2b6fa3eac285671efdd6751e"
+    },
+    "methods/VERIFICATION.md": {
+      "bytes": 5706,
+      "sha256": "86e2ab5c6c6a69be78fbe61261390b662a59c22ddea91254d4fa515d4ff4665d"
+    },
+    "methods/domains.json": {
+      "bytes": 10619,
+      "sha256": "797031bfebb862e9f67ab9ddb9ee84727d6b1ad9b7c830c27a0ce14253a520b3"
+    },
+    "projects/.gitkeep": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "pyproject.toml": {
+      "bytes": 352,
+      "sha256": "24e39e58613a29663b070e791fc7ea4339a48e946587557aae017bb5d3834a14"
+    },
+    "reference/ATLAS_Copilot_v3_baseline.zip": {
+      "bytes": 382237,
+      "sha256": "048b48ce4e5379af0b1e1502b24b7469086b331aa8eb0c291fc0fe3c50b14deb"
+    },
+    "reference/ATLAS_v4.0.0_user_supplied_original.zip": {
+      "bytes": 865311,
+      "sha256": "898882b06d365a8a0af4bdba64c97d4426a904897e439867fba32ead78656e76"
+    },
+    "reference/ORIGINAL_ATLAS_UNMODIFIED.zip": {
+      "bytes": 117032,
+      "sha256": "eac11cdf83ce79808ac31d449efad6fea9ca74ff2744097858a527a44242e9c3"
+    },
+    "reference/original_manifest.json": {
+      "bytes": 9316,
+      "sha256": "45f3d21bae555f63ef374657eb42e37dd7ded3f0e90871d33f99023c1840cc4e"
+    },
+    "reports/ARCHITECTURE.md": {
+      "bytes": 11283,
+      "sha256": "139490ae70bea18b017b17593c22a9a2681575236b98f376c58a9c9fd53f5022"
+    },
+    "reports/CHANGELOG_V3.md": {
+      "bytes": 1677,
+      "sha256": "a260ce3fd7576405b725720e091b213cb34ec0a4e8925bc1713ae0a667616dcf"
+    },
+    "reports/FILE_AUDIT_V4.json": {
+      "bytes": 110879,
+      "sha256": "a2d6ab28842878595bd83647b31f9876c637cb24278e691a92a77b6007118020"
+    },
+    "reports/IMPROVEMENTS.md": {
+      "bytes": 13446,
+      "sha256": "f2251c085e4e72e877f8ac94f3094a844f63f8eb7917e82af93ada8480809413"
+    },
+    "reports/LIMITATIONS.md": {
+      "bytes": 4965,
+      "sha256": "f2a770c4762c4c015e08340cff2e76c33e34d3509c45bad836d890a8c42622cd"
+    },
+    "reports/ORIGINAL_AUDIT.md": {
+      "bytes": 50985,
+      "sha256": "64bd0e3eb6cb78efcf9d551cada38958680b2cccb21ae66d1837e484e5956f0f"
+    },
+    "reports/RESEARCH_REVIEW.md": {
+      "bytes": 33335,
+      "sha256": "fb9e93d4abc72e7faee79047d232809019ae8d8f5c5f9761eef724ac21b2d96f"
+    },
+    "reports/V4_REVIEW.md": {
+      "bytes": 4620,
+      "sha256": "d1058ea71c4780f20c2a0ed8ea3e7dc74ae8ba2ade15ca769ab6878b2a781ebb"
+    },
+    "reports/V4_UPGRADE.md": {
+      "bytes": 8952,
+      "sha256": "a359d00cb7396de60fd936a3ab5c0c0004be821bee734e82b96f0c9a71f8a1c7"
+    },
+    "reports/V5_CHANGELOG.md": {
+      "bytes": 4429,
+      "sha256": "4b05a9fbf52a2b13e09b8037ca40e0738a9fdd3b4f15376b5fe5ab63615ce3a2"
+    },
+    "reports/baseline_results.json": {
+      "bytes": 12179,
+      "sha256": "a839f87978f109796f4338c341ad96dbe325d5167134c3746f421fa0cb2dbd01"
+    },
+    "reports/improvement_register.csv": {
+      "bytes": 11857,
+      "sha256": "dec4b0d64eb172c9c139ec8f8de83ebbb26236cd7e719d0c95ac6ec7b22c9170"
+    },
+    "reports/improvement_register.json": {
+      "bytes": 17107,
+      "sha256": "09643c003d2c6f0802c8b991fb9a66c6bc246fae4d9bdedddda3168a6d19e4f6"
+    },
+    "reports/master_payload_comparison.json": {
+      "bytes": 3949,
+      "sha256": "923a334d9ca955730d63b3757d37bcac58ffedb800d85c5ec3d24f2a296343de"
+    },
+    "reports/original_audit_matrix.csv": {
+      "bytes": 40083,
+      "sha256": "6dd8533740b3164dd93d5621f635afacb102bbc82f859ed31614fce507ffad33"
+    },
+    "reports/original_audit_matrix.json": {
+      "bytes": 58676,
+      "sha256": "7bbf8b9a34b86dd931da6a4760a41f805c42bf4ee78017dea9cd6c125c7728ec"
+    },
+    "research/SEARCH_LOG.md": {
+      "bytes": 3746,
+      "sha256": "5ec1a83fd7147b9f636c247e5889a059d3186998dbc3bef160fd6aa1ca59f37e"
+    },
+    "research/SOURCES.md": {
+      "bytes": 31625,
+      "sha256": "6d62f86221d7655e6122e480751209c54467f206551bc962c88eb159e2579d3b"
+    },
+    "research/sources.json": {
+      "bytes": 39732,
+      "sha256": "cc9ed0de7d8b0ab56596746f4ccbcece1f888ba138a29a1b739f4a74ede8ca26"
+    },
+    "scripts/benchmark_controls.py": {
+      "bytes": 8118,
+      "sha256": "fb49bbee29789cc73278a0a33ffe7f9b43ce6c88651247266a077c1a8c09ac9e"
+    },
+    "scripts/benchmark_v4.py": {
+      "bytes": 11114,
+      "sha256": "fbb945a90e4e574a1e5b84d7bfa321feecfcfc681f6159e2208299339c43da93"
+    },
+    "scripts/demo.py": {
+      "bytes": 551,
+      "sha256": "427736b367df8683eaa3e34489bb1d5dff8f9914a5f5f8a7436b3f3e80a01a42"
+    },
+    "scripts/package_release.py": {
+      "bytes": 9267,
+      "sha256": "205ab097ed03210705d232e15798b12d6ca72c31e04986686d36c9f102b2ff37"
+    },
+    "scripts/release_common.py": {
+      "bytes": 4290,
+      "sha256": "10424faa0800f9d846805096c72a331fbcc981b00ef58825db058653965a6487"
+    },
+    "scripts/validate_release.py": {
+      "bytes": 13067,
+      "sha256": "6f1535880989bd8a0e6154f5a1c8a72399eefdb177274c84f18f0b3871ef5837"
+    },
+    "tests/test_dispatch.py": {
+      "bytes": 13453,
+      "sha256": "c8b9c72ac1fe7c414344fcc7c209ed0733e179002431fdd2c2af1b35e8b970e7"
+    },
+    "tests/test_engine.py": {
+      "bytes": 13866,
+      "sha256": "18ca8390b40278269a42c7cd3f17bd1a5df73483026faf0534a356aad168981d"
+    },
+    "tests/test_quant.py": {
+      "bytes": 3486,
+      "sha256": "dcf9cd2a43411ae8e531644e478586e0a5f8f7c3c9505788987e6e699597641d"
+    },
+    "tests/test_release.py": {
+      "bytes": 10680,
+      "sha256": "f042e1547ff09004bbbbb0c3eca51caaca16419022e9266598a71f3afef9afd5"
+    },
+    "tests/test_v3.py": {
+      "bytes": 6823,
+      "sha256": "7eaeb5003f3320fb64e46e9175082c7583197aa7afb9b571b77fcdb2351ccf96"
+    },
+    "tests/test_v3_extended.py": {
+      "bytes": 3216,
+      "sha256": "c9d1e64df1cfa9b868731acdff63353c444fb5084b213f98cffdbd448ee04232"
+    },
+    "tests/test_v3_scheduler_integration.py": {
+      "bytes": 2240,
+      "sha256": "8b1142cdf13f98523441503200b95fae8d6765fcb84249e80ac0a98b5aaedb08"
+    },
+    "tests/test_v4_controls.py": {
+      "bytes": 32593,
+      "sha256": "588f76e6d98cb124e7550785ba1bc1041ee1bd82ae8ea5a6dac928106dc6ada2"
+    },
+    "tests/test_v4_foundations.py": {
+      "bytes": 13882,
+      "sha256": "ac232adecf59b6891f290bc6dd6a39ba98143fe7a3026b2cad542c1fdfac499b"
+    },
+    "tests/test_v4_packaging.py": {
+      "bytes": 4494,
+      "sha256": "4ad3b1e068bcff2ce34f384848863a543e203f073fb5e7f1a61387e0cb6a94e3"
+    },
+    "tests/test_v5.py": {
+      "bytes": 7302,
+      "sha256": "ecb7e6b7c8dc2deb63152c5e21d871bff071cf2e797d612f66759595fd41fd74"
+    }
+  },
+  "local_release_gate_passed": true,
+  "release_status": "QUALIFIED_LOCAL_RELEASE",
+  "unresolved": [
+    "Live Copilot compatibility and interaction behavior",
+    "Authenticated provider/MCP runtime tests",
+    "Independent post-implementation expert audit",
+    "Blinded equal-resource research-quality evaluation",
+    "Model-facing prompt-injection resistance",
+    "Other operating systems and Python versions"
+  ]
+}

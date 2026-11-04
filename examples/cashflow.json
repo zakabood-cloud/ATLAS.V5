@@ -1,0 +1,21 @@
+{
+  "kind": "cashflow",
+  "units": "USD",
+  "assumptions": [
+    "Synthetic periods; opening cash is after initial investment",
+    "Cash dates reflect settlement timing, not booked revenue"
+  ],
+  "opening_cash": "100",
+  "initial_investment": "100",
+  "discount_rate_per_period": "0.01",
+  "periods": [
+    {
+      "inflow": "0",
+      "outflow": "150"
+    },
+    {
+      "inflow": "200",
+      "outflow": "0"
+    }
+  ]
+}

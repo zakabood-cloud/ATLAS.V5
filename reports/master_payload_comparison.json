@@ -1,0 +1,182 @@
+[
+  {
+    "path": "CLAUDE.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/README.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/operations/STATE_MACHINE.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/RESEARCH_CONSTITUTION.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-intake/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/intake/QUESTION_BANK.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-meta/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/TOOL_AND_SOURCE_INTELLIGENCE.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/ORCHESTRATION_AND_SEARCH.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-execute/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/CLAIM_AND_DATA_STANDARDS.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/DECISION_AND_STATISTICS.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/SECURITY_AND_PERMISSIONS.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-audit/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/QUALITY_GATES.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-deliver/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/skills/research-memory/SKILL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/methods/MEMORY_POLICY.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/methods/METHODS_INDEX.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/evaluations/EVALUATION_PROTOCOL.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/domains/DOMAIN_PLAYBOOKS.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/templates/PROJECT_SCHEMAS.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/policies/REFERENCE_LIBRARY.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/methodology-architect.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/source-intelligence.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/tool-mcp-architect.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/domain-researcher.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/quantitative-analyst.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/adversarial-reviewer.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/evidence-auditor.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agents/report-synthesizer.md",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/engine/verify_install.py",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/engine/audit_project.py",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/projects/.gitignore",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": "research_os/state/.gitignore",
+    "exists": true,
+    "byte_identical": true
+  },
+  {
+    "path": ".claude/agent-memory/.gitignore",
+    "exists": true,
+    "byte_identical": true
+  }
+]

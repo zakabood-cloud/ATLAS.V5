@@ -1,0 +1,107 @@
+id,area,upgrade,status,principal_file,limitation
+1,Execution,Real Claude Code compatibility,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+2,Execution,Programmatic research worker engine,partial_or_procedural,atlas/scheduler.py,Requires independent runtime/external validation
+3,Execution,Dependency DAG execution,partial_or_procedural,atlas/scheduler.py,Requires independent runtime/external validation
+4,Execution,Durable external job IDs and recovery,partial_or_procedural,,Requires independent runtime/external validation
+5,Execution,Lifecycle enforcement hooks,partial_or_procedural,.claude/hooks/pretool_guard.py,Requires independent runtime/external validation
+6,Execution,Deterministic initialization readiness,bounded_local_implementation,atlas/__main__.py,Requires independent runtime/external validation
+7,Execution,Remote cancellation reconciliation,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+8,Execution,Noncritical blocked/skipped task semantics,bounded_local_implementation,atlas/project.py,Requires independent runtime/external validation
+9,Execution,Compatibility/version matrix,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+10,Execution,Compaction and recovery contracts,partial_or_procedural,,Requires independent runtime/external validation
+11,Integrations,Working research-provider adapters,partial_or_procedural,atlas/adapters.py,Requires independent runtime/external validation
+12,Integrations,Verified capability discovery,partial_or_procedural,atlas/integrations.py,Requires independent runtime/external validation
+13,Integrations,Authorized MCP installation/testing,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+14,Integrations,Domain-specific data adapters,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+15,Integrations,Unified tool-output interface,partial_or_procedural,atlas/adapters.py,Requires independent runtime/external validation
+16,Integrations,Data-provider retrieval benchmarks,partial_or_procedural,atlas/evaluation.py,Requires independent runtime/external validation
+17,Integrations,Intelligent tool routing,partial_or_procedural,methods/TOOL_DISCOVERY.md,Requires independent runtime/external validation
+18,Integrations,Tool health monitoring,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+19,Integrations,Research-data acquisition planner,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+20,Integrations,Provider source normalization,partial_or_procedural,atlas/adapters.py,Requires independent runtime/external validation
+21,Integrations,MCP benchmark laboratory,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+22,Integrations,Versioned tool-performance registry,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+23,Meta-research,Question-type classifier,partial_or_procedural,methods/domains.json,Requires independent runtime/external validation
+24,Meta-research,Research method discovery,partial_or_procedural,methods/TOOL_DISCOVERY.md,Requires independent runtime/external validation
+25,Meta-research,Pilot method experiments,bounded_local_implementation,atlas/methodology.py,Requires independent runtime/external validation
+26,Meta-research,Pilot-based method selection,bounded_local_implementation,atlas/methodology.py,Requires independent runtime/external validation
+27,Meta-research,Methodology knowledge graph,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+28,Meta-research,Domain protocol generators,partial_or_procedural,methods/domains.json,Requires independent runtime/external validation
+29,Meta-research,Methodological adversarial review,partial_or_procedural,.claude/agents/methodology-architect.md,Requires independent runtime/external validation
+30,Meta-research,Evidence-based readiness,partial_or_procedural,atlas/integrations.py,Requires independent runtime/external validation
+31,Meta-research,Value of additional preparation,partial_or_procedural,,Requires independent runtime/external validation
+32,Meta-research,Method-selection benchmarking,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+33,Retrieval,Systematic query expansion,bounded_local_implementation,atlas/retrieval.py,Requires independent runtime/external validation
+34,Retrieval,Adaptive search planner,partial_or_procedural,atlas/retrieval.py,Requires independent runtime/external validation
+35,Retrieval,Research coverage accounting,bounded_local_implementation,atlas/retrieval.py,Requires independent runtime/external validation
+36,Retrieval,Original primary-source tracing,partial_or_procedural,atlas/sourcegraph.py,Requires independent runtime/external validation
+37,Retrieval,Hybrid lexical and semantic retrieval,partial_or_procedural,atlas/retrieval.py,Requires independent runtime/external validation
+38,Retrieval,Citation/entity graph exploration,partial_or_procedural,atlas/sourcegraph.py,Requires independent runtime/external validation
+39,Retrieval,Negative evidence searches,partial_or_procedural,atlas/retrieval.py,Requires independent runtime/external validation
+40,Retrieval,Source inclusion/exclusion receipts,partial_or_procedural,methods/RESEARCH_PROTOCOL.md,Requires independent runtime/external validation
+41,Retrieval,Multilingual/geographic retrieval,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+42,Retrieval,PDF spreadsheet chart and image extraction,partial_or_procedural,atlas/ingest.py,"Requires additional software/data access, testing or specialist implementation"
+43,Retrieval,Historical/temporal search,partial_or_procedural,atlas/adapters.py,Requires independent runtime/external validation
+44,Retrieval,Search saturation estimator,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+45,Evidence,Semantic claim-source verification,partial_or_procedural,atlas/verification.py,Requires independent runtime/external validation
+46,Evidence,Atomic claim extraction,partial_or_procedural,atlas/verification.py,Requires independent runtime/external validation
+47,Evidence,Evidence dependency graph,partial_or_procedural,atlas/sourcegraph.py,Requires independent runtime/external validation
+48,Evidence,Final-report claim audit,partial_or_procedural,atlas/verification.py,Requires independent runtime/external validation
+49,Evidence,Independent review execution receipts,partial_or_procedural,atlas/verification.py,Requires independent runtime/external validation
+50,Evidence,Evidence strength scoring,partial_or_procedural,methods/VERIFICATION.md,Requires independent runtime/external validation
+51,Evidence,Contradiction adjudication,partial_or_procedural,atlas/sourcegraph.py,Requires independent runtime/external validation
+52,Evidence,Corrections/retractions monitoring,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+53,Evidence,Precise citation locations,partial_or_procedural,atlas/evidence.py,Requires independent runtime/external validation
+54,Evidence,Structured uncertainty register,partial_or_procedural,methods/VERIFICATION.md,Requires independent runtime/external validation
+55,Evidence,Human/expert escalation,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+56,Quantitative,Evidence-bound financial inputs,partial_or_procedural,methods/VERIFICATION.md,Requires independent runtime/external validation
+57,Quantitative,Domain-specific business models,partial_or_procedural,atlas/decision.py,Requires independent runtime/external validation
+58,Quantitative,Correlated distribution simulation,bounded_local_implementation,atlas/decision.py,Requires independent runtime/external validation
+59,Quantitative,Reference-class forecasting,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+60,Quantitative,Demand estimation,partial_or_procedural,atlas/decision.py,Requires independent runtime/external validation
+61,Quantitative,Working-capital cash flow,partial_or_procedural,atlas/decision.py,Requires independent runtime/external validation
+62,Quantitative,Country normalization,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+63,Quantitative,Causal inference protocols,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+64,Quantitative,Forecast backtesting,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+65,Quantitative,MCDA weight robustness,partial_or_procedural,atlas/quant.py,Requires independent runtime/external validation
+66,Quantitative,Reverse stress testing,bounded_local_implementation,atlas/decision.py,Requires independent runtime/external validation
+67,Quantitative,Practical information value,bounded_local_implementation,atlas/experiment.py,"Requires additional software/data access, testing or specialist implementation"
+68,Quantitative,Experimental validation planning,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+69,Agents,Source-intelligence specialist,bounded_local_implementation,.claude/agents/source-intelligence-researcher.md,Requires independent runtime/external validation
+70,Agents,Tool/MCP intelligence specialist,bounded_local_implementation,.claude/agents/tool-integration-architect.md,Requires independent runtime/external validation
+71,Agents,Independent research branches,partial_or_procedural,methods/ORCHESTRATION.md,Requires independent runtime/external validation
+72,Agents,Validated agent task contracts,partial_or_procedural,atlas/scheduler.py,Requires independent runtime/external validation
+73,Agents,Intelligent model routing,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+74,Agents,Evidence-based agent result adjudication,partial_or_procedural,methods/ORCHESTRATION.md,Requires independent runtime/external validation
+75,Agents,Specialized adversarial review,partial_or_procedural,.claude/agents/adversarial-reviewer.md,Requires independent runtime/external validation
+76,Agents,Coordination-overhead evaluation,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+77,Agents,Alternative orchestration frameworks,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+78,Memory,Cross-project knowledge store,partial_or_procedural,atlas/memory.py,Requires independent runtime/external validation
+79,Memory,Hybrid memory retrieval,bounded_local_implementation,atlas/memory_search.py,Requires independent runtime/external validation
+80,Memory,Versioned domain playbooks,partial_or_procedural,methods/domains.json,Requires independent runtime/external validation
+81,Memory,Method and tool performance memory,partial_or_procedural,atlas/memory_search.py,Requires independent runtime/external validation
+82,Memory,Evidence invalidation and freshness,partial_or_procedural,atlas/memory.py,Requires independent runtime/external validation
+83,Memory,Memory contradiction resolution,partial_or_procedural,atlas/memory.py,Requires independent runtime/external validation
+84,Memory,Auditable memory promotion receipts,partial_or_procedural,atlas/memory.py,Requires independent runtime/external validation
+85,Memory,Separation of user memory and research facts,partial_or_procedural,methods/RESEARCH_PROTOCOL.md,Requires independent runtime/external validation
+86,Memory,Measured memory effectiveness,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+87,Security,Prompt injection model-facing defenses,partial_or_procedural,.claude/hooks/pretool_guard.py,Requires independent runtime/external validation
+88,Security,Tool-boundary permission enforcement,partial_or_procedural,.claude/settings.json,Requires independent runtime/external validation
+89,Security,Paid API preflight budget reservations,bounded_local_implementation,atlas/budget.py,Requires independent runtime/external validation
+90,Security,Pinned dependencies and supply-chain review,partial_or_procedural,docs/SECURITY.md,Requires independent runtime/external validation
+91,Security,Whole-project backup and restore,bounded_local_implementation,atlas/project_archive.py,"Requires additional software/data access, testing or specialist implementation"
+92,Security,Provider-call observability,partial_or_procedural,atlas/project.py,Requires independent runtime/external validation
+93,Security,Privacy and access governance,partial_or_procedural,docs/SECURITY.md,Requires independent runtime/external validation
+94,Security,Continuous integration matrix,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+95,Security,Tamper-evident external audit signatures,partial_or_procedural,atlas/project.py,Requires independent runtime/external validation
+96,Security,Policy-based autonomous operation,partial_or_procedural,atlas/budget.py,Requires independent runtime/external validation
+97,Evaluation,Live end-to-end research benchmarks,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+98,Evaluation,Held-out evaluations,partial_or_procedural,atlas/evaluation.py,Requires independent runtime/external validation
+99,Evaluation,Baseline comparisons,partial_or_procedural,atlas/evaluation.py,Requires independent runtime/external validation
+100,Evaluation,Accuracy and coverage separately,bounded_local_implementation,atlas/evaluation.py,Requires independent runtime/external validation
+101,Evaluation,Blinded expert adjudication,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"
+102,Evaluation,Automated quality scorecard,bounded_local_implementation,atlas/evaluation.py,Requires independent runtime/external validation
+103,Evaluation,Observed-outcome forecasting,partial_or_procedural,methods/EVALUATION.md,Requires independent runtime/external validation
+104,Evaluation,Adaptive interview evaluation,partial_or_procedural,atlas/intake.py,Requires independent runtime/external validation
+105,Evaluation,Deliverable format validation,partial_or_procedural,methods/RESEARCH_PROTOCOL.md,Requires independent runtime/external validation
+106,Evaluation,Research operations dashboard,not_yet_implemented_or_unverified,,"Requires additional software/data access, testing or specialist implementation"

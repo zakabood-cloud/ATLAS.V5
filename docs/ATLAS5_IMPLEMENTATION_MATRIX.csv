@@ -1,0 +1,63 @@
+id,upgrade,status,related_files,verification_boundary
+1,Forensic repository audit,partial,reports/FILE_AUDIT_V4.json;reference/ATLAS_v4.0.0_user_supplied_original.zip,Full original v4 hashes preserved; new post-change forensic expert audit remains separate
+2,Copilot compatibility,partial,.github/agents;docs/COPILOT.md,Static checks only; current live Copilot not exercised
+3,Delegation alias,implemented_local,.github/agents/research-coordinator.agent.md,Correct agent alias; live delegation unverified
+4,Web tool compatibility,partial,docs/COPILOT.md;atlas/model_research.py,Validated tool requirements; active cloud tools not probed
+5,Real web research tool access,partial,atlas/adapters.py;atlas/model_research.py,Adapters provided; no authenticated live provider execution
+6,Copilot live runtime tests,not_verified,docs/ATLAS5.md,Requires user Copilot session
+7,Platform-independent core,implemented_local,atlas;CLAUDE.md;.claude;.github,Portable core and two native instruction adapters
+8,Environment-specific configuration,partial,docs/SESSION_ENVIRONMENTS.md;docs/COPILOT.md,Known differences documented; Codex adapter not built
+9,Readiness and STOP,implemented_local,atlas/__main__.py;.claude/skills/atlas-init/SKILL.md,Local test checks exact readiness and absence of intake
+10,Adaptive intake,partial,atlas/intake.py;methods/INTAKE.md,Core interview ledger; real conversation evaluation unavailable
+11,Meta-research before research,implemented_local,atlas/project.py;methods/RESEARCH_PROTOCOL.md,Stage gates; quality of chosen method is unproven
+12,Pilot methodology selection,partial,atlas/methodology.py,Candidate scoring works; live trial assessment is manual
+13,Durable multi-session state,implemented_local,atlas/project.py;atlas/continuation.py,Persistent state/handoffs; no hard duration cutoff or automatic session chaining
+14,Task scheduler,partial,atlas/scheduler.py,Fixture worker executed; real Copilot worker launched by client
+15,Task resumption,partial,atlas/continuation.py;atlas/project.py,State persists; remote job reconciliation manual
+16,Cross-session orchestration,partial,atlas/session.py;atlas/continuation.py,No universal 59-minute cap; automatic session relaunch unavailable
+17,External job tracking,partial,atlas/model_research.py,Stable IDs and receipts but no full async provider lifecycle
+18,Risk-based access failure policy,implemented_local,atlas/failures.py;atlas/project.py;docs/ACCESS.md,Optional versus critical policy and state handling tested
+19,Continue unaffected work,partial,atlas/project.py;atlas/dispatch.py,Optional failures avoid global hold; live cancellation untested
+20,Task outcome states,implemented_local,atlas/project.py,Done blocked skipped failed supported; not all nuanced outcomes distinct
+21,Research provider adapters,partial,atlas/model_research.py;atlas/adapters.py,OpenAI/Gemini mock-tested; OpenAlex/Crossref metadata; no live calls
+22,MCP discovery and security,partial,atlas/integrations.py;methods/TOOL_DISCOVERY.md,Discovery advice not automatic installation
+23,Integration status states,partial,atlas/integrations.py;atlas/access.py,Approved and receipt states; network health checks incomplete
+24,Domain-specific data sources,partial,docs/INTEGRATIONS.md;atlas/adapters.py,Catalog extensive; commercial providers not connected
+25,Unified tool output,partial,atlas/model_research.py;atlas/adapters.py,Some normalized receipts; no universal vendor schema
+26,Tool selection,partial,atlas/methodology.py;methods/TOOL_DISCOVERY.md,Scoring and guidance; quality is not benchmarked
+27,Provider health benchmark,partial,atlas/evaluation.py,Evaluation utilities; no live provider measurements
+28,Multi-model research,partial,atlas/model_research.py,Two opt-in model APIs; independent research jobs untested
+29,Model routing,partial,docs/MODEL_ROUTING.md,Native model selection; systematic router not operational
+30,Multi-agent orchestration,partial,.github/agents;.claude/agents;atlas/dispatch.py,Eight roles; actual subagents supplied by host
+31,Structured agent contracts,implemented_local,atlas/contracts.py;atlas/dispatch.py,Schema and output validation; runtime compliance unproven
+32,Independent source branches,partial,methods/ORCHESTRATION.md,Procedural isolation; not empirically verified
+33,Parallelism optimization,not_verified,benchmarks/PROTOCOL.md,No live quality/cost ablation benchmark
+34,Query expansion,implemented_local,atlas/retrieval.py,Bounded local expansion; no automatic live search backend
+35,Evidence coverage measurement,partial,atlas/retrieval.py;atlas/project.py,Concept and origin accounting; unknown recall against full web
+36,Original source tracing,partial,atlas/sourcegraph.py;atlas/evidence.py,Lineage diagnostics; source discovery manual
+37,Document ingestion,partial,atlas/ingest.py,Bounded text/PDF metadata only; figures require external validation
+38,Semantic claim verification,partial,atlas/claim_checks.py;atlas/verification.py,Lexical flags and reviewer packets; cannot prove entailment
+39,Atomic claim extraction,partial,methods/VERIFICATION.md,Required in workflow; automatic final extraction incomplete
+40,Independent semantic verifier,not_verified,atlas/verification.py,Separate model reviewer must be performed in real session
+41,Final report audit,implemented_local,atlas/verification.py,Marker/citation consistency; semantic source support still manual
+42,Source dependency graph,partial,atlas/sourcegraph.py,Duplicate origin and contradictions; complete relation graph unavailable
+43,Quantitative modeling,partial,atlas/quant.py;examples,Ten bounded deterministic calculations; domain-specific models incomplete
+44,Evidence-backed model inputs,implemented_local,atlas/analysis_inputs.py,Provenance validation of declared inputs; source authenticity not established
+45,Uncertainty analysis,partial,atlas/quant.py,Scenarios and sensitivity; forecasting calibration not proven
+46,Value of information experiments,partial,atlas/experiment.py,Decision math helper; empirical estimates remain assumptions
+47,Research memory,implemented_local,atlas/memory.py,"Versioned local methodology memory, no remote knowledge service"
+48,Memory retrieval and governance,partial,atlas/memory_search.py;atlas/memory.py,Ranked retrieval and promotion; effectiveness unbenchmarked
+49,Controlled self-improvement,partial,methods/EVALUATION.md,Review requirements; automatic optimized learning not implemented
+50,Security architecture,partial,docs/SECURITY.md;atlas/io.py,Local guardrails and instructions; host sandbox/MCP permissions not proven
+51,Cost authorization controls,implemented_local,atlas/budget.py;atlas/model_research.py,Local preflight reservations; not provider-side spend cap
+52,Backup and interrupted cleanup,implemented_local,atlas/project_archive.py;atlas/structure.py,Project backup and temp directory exclusion; remote backup not included
+53,Execution observability,partial,atlas/project.py;atlas/continuation.py,Audit events; external runtime traces not automatically captured
+54,Deliverable generation,partial,.github/skills/atlas-deliver/SKILL.md,Procedures and validation; universal format rendering unavailable
+55,End-to-end research benchmarks,not_verified,benchmarks;reports/TESTING.md,"Synthetic lifecycle only, not actual web research"
+56,Comparison against baselines,partial,scripts/benchmark_v4.py;scripts/benchmark_controls.py,Paired software controls only; no live research quality comparison
+57,Blinded and ablation evaluation,partial,atlas/evaluation.py;benchmarks/PROTOCOL.md,Scoring helpers; no blinded human assessors
+58,Completion criteria,implemented_local,atlas/project.py,Sequential gates and evidence checks; truth unprovable via hashes
+59,Automated QA,implemented_local,tests;atlas/structure.py,Local unit suites; live integration unavailable
+60,Verified release package,partial,scripts/package_release.py;reports/test_results.json,Clean extraction verification pending this packaging run
+61,Implementation status register,implemented_local,docs/ATLAS5_IMPLEMENTATION_MATRIX.csv,Every 62 directive item accounted for in this matrix
+62,Independent final audit,not_verified,reports/V5_CHANGELOG.md,Requires external expert evaluation and real hosted tests

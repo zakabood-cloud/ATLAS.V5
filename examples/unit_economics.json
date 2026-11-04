@@ -1,0 +1,19 @@
+{
+  "kind": "unit_economics",
+  "units": "USD",
+  "assumptions": [
+    "Synthetic illustrative values; not current Amazon or Shopify fees",
+    "Fee base is net revenue; expected return cost must reconcile refunds and residual costs",
+    "Units per period is an assumption, not a sales forecast"
+  ],
+  "price_gross": "120",
+  "vat_rate": "0.20",
+  "landed_cost": "30",
+  "fulfillment": "10",
+  "payment_fixed": "0",
+  "fee_rate_on_net": "0.15",
+  "ad_cost_per_order": "20",
+  "expected_return_cost": "0",
+  "fixed_cost_per_period": "1000",
+  "units_per_period": "100"
+}

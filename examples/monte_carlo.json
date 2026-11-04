@@ -1,0 +1,19 @@
+{
+  "kind": "monte_carlo",
+  "units": "USD",
+  "assumptions": [
+    "Subjective joint scenario weights for a synthetic demonstration, not empirical probabilities"
+  ],
+  "seed": 42,
+  "draws": 10000,
+  "scenarios": [
+    {
+      "net_value": "-100",
+      "probability": "0.25"
+    },
+    {
+      "net_value": "100",
+      "probability": "0.75"
+    }
+  ]
+}

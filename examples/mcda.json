@@ -1,0 +1,34 @@
+{
+  "kind": "mcda",
+  "units": "declared criterion units",
+  "assumptions": [
+    "Synthetic alternatives; additive utility and weights are stakeholder assumptions",
+    "Bounds fixed before observing alternatives"
+  ],
+  "criteria": [
+    {
+      "name": "cost",
+      "weight": "0.6",
+      "low": "0",
+      "high": "100",
+      "direction": "cost"
+    },
+    {
+      "name": "quality",
+      "weight": "0.4",
+      "low": "0",
+      "high": "10",
+      "direction": "benefit"
+    }
+  ],
+  "alternatives": {
+    "A": {
+      "cost": "30",
+      "quality": "6"
+    },
+    "B": {
+      "cost": "60",
+      "quality": "9"
+    }
+  }
+}

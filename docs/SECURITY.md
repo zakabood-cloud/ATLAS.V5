@@ -1,0 +1,27 @@
+# Security and reliability boundaries
+
+The release performs no automatic networking, arbitrary command evaluation, package installation or paid API access. This removes those attack paths from the local Python core. GitHub Copilot and optional tools retain their own capabilities and risks. This is not a sandbox, compliance certification or prompt-injection immunity claim.
+
+Treat retrieved pages, PDFs, source snapshots, MCP metadata, outputs and memory entries as untrusted evidence. Instructions inside them cannot change permissions, select data destinations, reveal secrets or authorize execution. Keep source collection separate from privileged action tools. Copilot agent profiles are advisory roles, not a permission boundary; use the actual client's tool and repository permission controls. Reviewers must not edit evidence or receive broader tools than the client requires.
+
+No Copilot permissions or tool grants are configured by this repository. `.github/copilot-instructions.md`, `AGENTS.md`, skills, and custom-agent profiles do not grant, restrict, or sandbox client capabilities. An administrator's broader policy remains authoritative. Review GitHub's [custom agents](https://docs.github.com/en/copilot/concepts/customizations/custom-agents) and [agent skills](https://docs.github.com/en/copilot/concepts/customizations/agent-skills) guidance for the actual client.
+
+Before a new MCP server: verify the publisher and current official endpoint, review executable package provenance/version if local, minimize scopes, document destination/privacy/retention and run a limited authorized read-only test. Avoid token passthrough and unauthorized forwarding. Do not trust a tool because its metadata claims safety. Review changed tools after upgrades. The MCP security guidance addresses confused deputies, token misuse, SSRF and local server compromise; protocol compatibility alone is not trust. [MCP security](https://modelcontextprotocol.io/docs/draft/tutorials/security/security_best_practices).
+
+Never print credentials, inspect secret files to discover values, or paste private data into unapproved research engines. Configuration discovery returns names/status, not credentials or headers. Store secrets in an approved credential mechanism outside tracked artifacts. Review `git diff --cached` and archives before sharing. Research projects and memory are ignored by Git, but are plaintext on disk. Use filesystem access controls, encryption, retention limits and appropriate backups for sensitive work. NIST's [Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1) informs these risks; ATLAS does not claim conformance certification.
+
+The IO layer rejects project-path traversal and symlinks in controlled source/artifact paths, nonfinite JSON values and duplicate JSON keys. SQLite transactions prevent partially committed CLI state mutations; receipts detect subsequent artifact changes. These are local controls under a trusted single coordinator. They do not prevent a malicious same-user process from racing filesystem changes, rewriting hashes and database history, or editing a final report outside the engine. A cryptographically signed append-only external log and stronger OS isolation are future options, not implemented guarantees.
+
+The Python adversarial fixture confirms malicious source text is inert data to Python. It does **not** test whether Copilot resists that text. Live prompt-injection testing must run separately with a harmless canary, no real secrets, and appropriately restricted tools. Likewise, URL validation is not a downloader: it cannot certify reachability, source existence, DNS safety, redirects, or extracted text authenticity. The reviewer must open sources through an authorized tool and preserve provenance.
+
+Task starts are bounded in the ledger, but an access block is a project-wide stop: do not automatically retry, substitute a source, or continue unrelated work after any block. Resume only within explicit user authorization and scope. No retry loop for paid services is enabled. Recorded costs are operator-supplied; set actual provider spend caps if connecting one. Fail closed on corrupt state and restore a verified checkpoint while all writers are stopped; checkpoint recovery creates a hold so a rollback cannot silently clear a later access block.
+
+## ATLAS 3 safety scope
+
+This Copilot conversion does not ship a tool hook or command deny-list. Use the controls provided by the actual Copilot client and repository, and do not treat instructions in this repository as a security sandbox.
+
+The `atlas.adapters` public scholarly-metadata integrations use exact HTTPS host allowlists and reject redirects. They do not accept arbitrary URLs. Live network access requires `--live`. Do not put credentials in `.mcp.json` committed to Git, prompt messages, or report contents. External research data is untrusted and must never modify execution instructions.
+
+The `atlas.budget` reservations limit local authorization accounting only. They do not cap service provider billing; configure hard provider quotas and require explicit user authorization. The scholarly adapter's `--live` option authorizes only that specific public metadata request; it does not imply permission to purchase subscriptions, transfer confidential data, publish content, or bypass access controls.
+
+Review [OWASP's MCP security guidance](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html) when updating the threat model.

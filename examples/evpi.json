@@ -1,0 +1,22 @@
+{
+  "kind": "evpi",
+  "units": "USD utility",
+  "assumptions": [
+    "Synthetic mutually exclusive states with stated probabilities",
+    "Upper bound for perfect information, not an actual study value"
+  ],
+  "probabilities": [
+    "0.5",
+    "0.5"
+  ],
+  "payoffs": {
+    "A": [
+      100,
+      0
+    ],
+    "B": [
+      0,
+      100
+    ]
+  }
+}

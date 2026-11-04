@@ -1,0 +1,6 @@
+{
+  "kind": "correlated_simulation", "units": "USD", "assumptions": ["This is a hypothetical payoff model", "The matrix represents latent Gaussian correlation, not observed Pearson correlation of non-normal variables"],
+  "seed": 42, "draws": 3000, "intercept": "4000", "variables": {"customer_orders": {"distribution": "triangular", "low": 200, "mode": 500, "high": 900}, "acquisition_cost": {"distribution": "normal", "mean": 20, "sd": 5, "low": 0}},
+  "coefficients": {"customer_orders": 15, "acquisition_cost": -150},
+  "latent_correlation": [[1, -0.35], [-0.35, 1]]
+}

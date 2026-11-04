@@ -1,0 +1,10 @@
+---
+name: atlas-audit
+description: Independently audit research support, calculations and coverage
+---
+
+Read `methods/VERIFICATION.md`, accepted protocol, search/coverage records and evidence directly. Use fresh evidence-reviewer and adversarial-reviewer contexts when actually available; report limitations, source access and context separation. A role or model label does not prove independence. Inspect original source context rather than relying on summaries or snippets. For every material claim assess scope, dates, population, geography, units/denominator, uncertainty, causal language, direct support, contrary evidence, source lineage and decision impact. Check original origins, duplicates, retractions/corrections, exclusions, missing planned searches and coverage thresholds. Reproduce calculations and trace assumptions; report semantic disagreements and adjudication.
+
+Open `review-packet` for each material claim. It binds the current complete claim and source snapshot hashes and shows included context plus omitted ranges. Verify source context beyond excerpts as needed; inspect omissions when they may affect meaning. Save review artifacts and claim-level verdicts with `claim_sha256` for the whole current claim and exact `source_hashes`. Do not reuse a receipt after any claim/source change. The final `review.json` must bind `evidence_sha256` to the exact current evidence register, list every material `reviewed_claim_id`, and honestly report reviewer/model identity (or `not exposed`), coverage, numeric review, counterarguments, uncertainty, unresolved critical issues and limitations. Different identity strings do not prove independence.
+
+Run `python3 -m atlas validate <id>`. Passing proves only mechanical consistency. Reject unsupported claims or narrow them conditionally; never fabricate an excerpt, review, tool call, or semantic support. Any evidence change invalidates its bound assessment/final review; reopen an appropriate prior state and repeat affected downstream work. Advance to SYNTHESIS only after actual substantive review and passing mechanical checks.

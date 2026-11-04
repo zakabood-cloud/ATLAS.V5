@@ -1,0 +1,10 @@
+{
+  "kind": "bayes",
+  "units": "probability",
+  "assumptions": [
+    "Synthetic prior and likelihoods; no calibration claim"
+  ],
+  "prior": "0.5",
+  "p_e_given_h": "0.8",
+  "p_e_given_not_h": "0.2"
+}

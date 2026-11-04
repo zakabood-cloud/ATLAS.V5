@@ -1,0 +1,263 @@
+{
+  "at": "2026-11-04T20:23:32.285060+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "baseline_identity": "Historical original Claude prototype; not the supplied ATLAS Copilot v3 repository",
+  "scope": "15 deliberately selected paired control cases; schemas adapted, intended defect held constant; no model calls or quality score",
+  "all_upgraded_expected": true,
+  "results": [
+    {
+      "case": "pristine_install",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "original_stderr": "",
+      "upgraded_accepted": true,
+      "upgraded_detail": [],
+      "expected_upgraded_accepted": true,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "malformed_yaml_frontmatter",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        ".github/agents/domain-researcher.agent.md: Invalid or excessively nested JSON"
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "invalid_python_payload",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        "scripts/demo.py: invalid syntax (<unknown>, line 1)"
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "missing_required_file",
+      "original_accepted": false,
+      "original_exit_code": 1,
+      "original_stdout": "ATLAS INSTALL CHECK FAILED\nMISSING/EMPTY: CLAUDE.md\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        "Missing/empty AGENTS.md",
+        "Broken link .github/copilot-instructions.md -> ../AGENTS.md"
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "meaningless_policy_payload",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "original_stderr": "",
+      "upgraded_accepted": true,
+      "upgraded_detail": [],
+      "expected_upgraded_accepted": true,
+      "upgraded_matches_expected": true,
+      "interpretation": "Known semantic limitation; not a valid policy"
+    },
+    {
+      "case": "arbitrary_stage",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=BANANA, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": "Unknown target state",
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "fabricated_source_self_attested_v2",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "source_url",
+          "path": "sources[0]",
+          "message": "URL not eligible as public external evidence"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "critical_claim_without_source",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "claim_sources",
+          "path": "claims[0]",
+          "message": "Valid nonempty source references required"
+        },
+        {
+          "code": "assessment_ref",
+          "path": "assessments[0]",
+          "message": "Source not attached to claim"
+        },
+        {
+          "code": "unreviewed_claim",
+          "path": "C1",
+          "message": "Material claim lacks an independent supporting assessment"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "blank_claim_identifier",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "claim_id",
+          "path": "claims[0]",
+          "message": "Missing or duplicate ID"
+        },
+        {
+          "code": "assessment_ref",
+          "path": "assessments[0]",
+          "message": "Unresolved claim/source"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "missing_source_reference",
+      "original_accepted": false,
+      "original_exit_code": 1,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=1\n- Claim C1 references missing source MISSING\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "claim_sources",
+          "path": "claims[0]",
+          "message": "Valid nonempty source references required"
+        },
+        {
+          "code": "assessment_ref",
+          "path": "assessments[0]",
+          "message": "Source not attached to claim"
+        },
+        {
+          "code": "unreviewed_claim",
+          "path": "C1",
+          "message": "Material claim lacks an independent supporting assessment"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "duplicate_source_id",
+      "original_accepted": false,
+      "original_exit_code": 1,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=1\n- Duplicate source ID: S1\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "source_id",
+          "path": "sources[1]",
+          "message": "Missing or duplicate ID"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "unverified_critical_claim",
+      "original_accepted": false,
+      "original_exit_code": 1,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=1\n- Critical claim C1 not fully source-verified (status=V0); must be labeled conditional/unverified in report\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "unreviewed_claim",
+          "path": "C1",
+          "message": "Material claim lacks an independent supporting assessment"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "invalid_enums",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=AUDIT, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": [
+        {
+          "code": "claim_kind",
+          "path": "claims[0]",
+          "message": "Unknown kind"
+        }
+      ],
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "corrupted_state",
+      "original_accepted": false,
+      "original_exit_code": 1,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=?, issues=1\n- Invalid state JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": "State database unavailable/corrupt/locked; restore a checked checkpoint",
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    },
+    {
+      "case": "empty_completion_artifacts",
+      "original_accepted": true,
+      "original_exit_code": 0,
+      "original_stdout": "ATLAS PROJECT AUDIT: case, stage=COMPLETE, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "original_stderr": "",
+      "upgraded_accepted": false,
+      "upgraded_detail": "Empty or altered deliverable",
+      "expected_upgraded_accepted": false,
+      "upgraded_matches_expected": true,
+      "interpretation": "Paired local-control defect, not live research performance"
+    }
+  ]
+}

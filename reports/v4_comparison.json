@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "scope": "Nine selected deterministic local defect and healthy control cases, not a representative sample, accuracy estimate, or research-superiority claim.",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "interpreter_executable": "/opt/pyvenv/bin/python",
+  "baseline": {
+    "version": "3.0.0",
+    "archive": "reference/ATLAS_Copilot_v3_baseline.zip",
+    "sha256": "048b48ce4e5379af0b1e1502b24b7469086b331aa8eb0c291fc0fe3c50b14deb"
+  },
+  "current": {
+    "version": "5.0.0",
+    "source_sha256": {
+      "atlas/retrieval.py": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e",
+      "atlas/evaluation.py": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604",
+      "atlas/ingest.py": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+    }
+  },
+  "results": [
+    {
+      "case": "query_dimension_fairness",
+      "fixture": {
+        "question": "Synthetic evaluation question",
+        "coverage": [
+          "cost",
+          "access",
+          "safety"
+        ],
+        "max_queries": 3
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "dimensions": [
+          "cost"
+        ],
+        "query_count": 3
+      },
+      "current_v4": {
+        "accepted": true,
+        "dimensions": [
+          "cost",
+          "access",
+          "safety"
+        ],
+        "query_count": 3
+      },
+      "expectation": "v3 covers 1 dimension; v4 covers exactly cost/access/safety within 3 queries.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+        "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "untraced_origin_lineage",
+      "fixture": {
+        "required": [
+          "effect"
+        ],
+        "observations": [
+          {
+            "dimension": "effect",
+            "source_id": "S1"
+          },
+          {
+            "dimension": "effect",
+            "source_id": "S2"
+          }
+        ]
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "distinct_origin_count": 2,
+        "status": "multiple_origins",
+        "untraced_source_ids": []
+      },
+      "current_v4": {
+        "accepted": true,
+        "distinct_origin_count": 0,
+        "status": "untraced",
+        "untraced_source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      "expectation": "v3 counts 2 origins; v4 counts 0, status untraced.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+        "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "duplicate_evaluation_result_ids",
+      "fixture": {
+        "cases": [
+          {
+            "id": "C1",
+            "expected": "yes"
+          }
+        ],
+        "results": [
+          {
+            "id": "C1",
+            "answer": "no"
+          },
+          {
+            "id": "C1",
+            "answer": "yes"
+          }
+        ]
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "accuracy_over_all": 1.0,
+        "correct": true
+      },
+      "current_v4": {
+        "accepted": false,
+        "error": "Duplicate result ID: C1",
+        "error_type": "AtlasError"
+      },
+      "expectation": "v3 accepts duplicate results; v4 raises exactly AtlasError.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "b19b8c5be8fc99752dcdfafcc6c3b485490647dff7a61e11b9d50f9a243744ce",
+        "current_source_sha256": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "duplicate_json_keys",
+      "fixture": {
+        "content": "{\"status\":\"ok\",\"status\":\"accepted\"}"
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "parsed_status": "accepted"
+      },
+      "current_v4": {
+        "accepted": false,
+        "error": "Duplicate JSON key: status",
+        "error_type": "AtlasError"
+      },
+      "expectation": "v3 accepts duplicate JSON keys; v4 raises exactly AtlasError.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "eb10438d4d0aaae17891607ebd59b2adcaa7f13abee07b68e961fefb290d5a46",
+        "current_source_sha256": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "healthy_queries",
+      "fixture": {
+        "question": "Synthetic",
+        "coverage": [
+          "cost",
+          "access",
+          "safety"
+        ],
+        "max_queries": 9
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "dimensions": [
+          "cost",
+          "access",
+          "safety"
+        ],
+        "query_count": 9
+      },
+      "current_v4": {
+        "accepted": true,
+        "dimensions": [
+          "cost",
+          "access",
+          "safety"
+        ],
+        "query_count": 9
+      },
+      "expectation": "Both accept 9 queries covering exactly cost/access/safety.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "7b5c1b3653cb1f64af02493d0cd4c78ce23f695ce97d71bf4841b6cd7d4ebf8c",
+        "current_source_sha256": "868080db70bb4410614232336b1251bb62e6f201e334fac145e17363a1217d7e"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "healthy_evaluation",
+      "fixture": {
+        "cases": [
+          {
+            "id": "C1",
+            "expected": "yes"
+          }
+        ],
+        "results": [
+          {
+            "id": "C1",
+            "answer": "yes"
+          }
+        ]
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "accuracy_over_all": 1.0,
+        "correct": true
+      },
+      "current_v4": {
+        "accepted": true,
+        "accuracy_over_all": 1.0,
+        "correct": true
+      },
+      "expectation": "Both accept unique correct answer with accuracy_over_all exactly 1.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "b19b8c5be8fc99752dcdfafcc6c3b485490647dff7a61e11b9d50f9a243744ce",
+        "current_source_sha256": "8cb01e765b6ea036403418b4bf78bc0f7fba62805190dbb43b941ed82fb84604"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "healthy_json",
+      "fixture": {
+        "content": "{\"status\":\"ok\"}"
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "parsed_status": "ok"
+      },
+      "current_v4": {
+        "accepted": true,
+        "parsed_status": "ok"
+      },
+      "expectation": "Both accept unique JSON key and preserve status exactly ok.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "eb10438d4d0aaae17891607ebd59b2adcaa7f13abee07b68e961fefb290d5a46",
+        "current_source_sha256": "60dfa0cc1c51d8b25ffe718ac8fce4f7d2e5e610f96d23b778a13cc94f609519"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "healthy_provider",
+      "fixture": {
+        "response": {
+          "results": [
+            {
+              "id": "https://openalex.org/W1",
+              "title": "Synthetic fixture",
+              "publication_year": 2024
+            }
+          ]
+        }
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "titles": [
+          "Synthetic fixture"
+        ],
+        "total_returned": 1
+      },
+      "current_v4": {
+        "accepted": true,
+        "titles": [
+          "Synthetic fixture"
+        ],
+        "total_returned": 1
+      },
+      "expectation": "Both return exactly one metadata item titled Synthetic fixture.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "9e4350b92d69c418305c6f450fe29c560e284a07a509eff3a8e4469c197d2ff8",
+        "current_source_sha256": "efde260f38607b3b498b96f64cc5094bbb162c68d55bded03613e4b627ec37c3"
+      },
+      "expectation_met": true
+    },
+    {
+      "case": "malformed_provider",
+      "fixture": {
+        "response": {}
+      },
+      "baseline_v3": {
+        "accepted": true,
+        "titles": [],
+        "total_returned": 0
+      },
+      "current_v4": {
+        "accepted": false,
+        "error": "Provider schema missing the result list; this is not an empty search",
+        "error_type": "AtlasError"
+      },
+      "expectation": "v3 accepts {} as zero results; v4 raises exactly AtlasError.",
+      "execution": {
+        "baseline_version": "3.0.0",
+        "current_version": "5.0.0",
+        "interpreter": "/opt/pyvenv/bin/python",
+        "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+        "baseline_source_sha256": "9e4350b92d69c418305c6f450fe29c560e284a07a509eff3a8e4469c197d2ff8",
+        "current_source_sha256": "efde260f38607b3b498b96f64cc5094bbb162c68d55bded03613e4b627ec37c3"
+      },
+      "expectation_met": true
+    }
+  ],
+  "all_expectations_met": true
+}

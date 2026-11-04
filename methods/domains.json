@@ -1,0 +1,382 @@
+{
+  "amazon": {
+    "label": "Amazon product portfolio",
+    "methods": [
+      "bottom-up contribution model",
+      "marketplace cohort and competitor sampling",
+      "supplier verification and compliance screen"
+    ],
+    "essential_questions": [
+      {
+        "key": "marketplace",
+        "prompt": "Which Amazon marketplace, fulfillment route, currency, and seller eligibility?"
+      },
+      {
+        "key": "product_model",
+        "prompt": "Private label, authorized resale, wholesale, or another sourcing model?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "launch_budget",
+        "prompt": "What launch cash, reorder buffer and acceptable inventory exposure?"
+      },
+      {
+        "key": "categories",
+        "prompt": "Which categories, restricted products and differentiation constraints apply?"
+      }
+    ],
+    "risks": [
+      "Sales estimates are not seller transactions",
+      "Review and rank manipulation",
+      "Changing fees, tax and compliance",
+      "Survivorship and stockout bias"
+    ],
+    "coverage": [
+      "demand",
+      "competition",
+      "sourcing",
+      "compliance",
+      "unit_economics",
+      "cash_cycle"
+    ],
+    "quantitative": [
+      "unit_economics",
+      "cashflow",
+      "joint_scenario_analysis"
+    ],
+    "verification": [
+      "Match fee schedule to dimensions, category and date",
+      "Validate estimates against authorized sales or a bounded pilot",
+      "Supplier documents are not independent factory verification"
+    ],
+    "stopping": [
+      "Decision thresholds tested under downside and stockout scenarios",
+      "Unresolved certification or import eligibility prevents unconditional go"
+    ]
+  },
+  "commerce": {
+    "label": "Shopify versus Amazon",
+    "methods": [
+      "matched unit-economics comparison",
+      "cohort retention and acquisition analysis",
+      "bounded channel experiment"
+    ],
+    "essential_questions": [
+      {
+        "key": "channels",
+        "prompt": "Which channels, existing audience, product, and operational capabilities?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "cohorts",
+        "prompt": "Do you have channel-specific acquisition, return, margin and repeat-purchase cohorts?"
+      }
+    ],
+    "risks": [
+      "Blending attributed and incremental sales",
+      "Comparing gross revenue to contribution",
+      "Double-counting returning buyers"
+    ],
+    "coverage": [
+      "acquisition",
+      "conversion",
+      "retention",
+      "economics",
+      "operations",
+      "platform_risk"
+    ],
+    "quantitative": [
+      "unit_economics",
+      "cashflow",
+      "sensitivity"
+    ],
+    "verification": [
+      "Use consistent horizons, attribution windows, tax and fulfillment basis",
+      "Prefer owned export and experiment evidence"
+    ],
+    "stopping": [
+      "Recommendation robust to CAC and retention uncertainty or clear next test"
+    ]
+  },
+  "markets": {
+    "label": "Geographic commercial comparisons",
+    "methods": [
+      "matched market definitions",
+      "bottom-up addressable segment estimates",
+      "policy and distribution feasibility"
+    ],
+    "essential_questions": [
+      {
+        "key": "market_pair",
+        "prompt": "Which countries and exact product/population/channel definitions?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "currency_basis",
+        "prompt": "Which currency date, nominal/real/PPP basis and accessible resident groups?"
+      }
+    ],
+    "risks": [
+      "National totals used for niche demand",
+      "Different tax bases and time periods",
+      "Currency and import uncertainty"
+    ],
+    "coverage": [
+      "addressable_segment",
+      "demand",
+      "costs",
+      "access",
+      "regulation",
+      "execution"
+    ],
+    "quantitative": [
+      "scenario_analysis",
+      "cashflow",
+      "mcda"
+    ],
+    "verification": [
+      "Country statistics definitions and data periods must align",
+      "Regulatory claims use official jurisdictional sources"
+    ],
+    "stopping": [
+      "Rank reversals and access limitations explicit"
+    ]
+  },
+  "opportunity": {
+    "label": "Business opportunity discovery",
+    "methods": [
+      "reference-class base rates",
+      "problem discovery and alternative map",
+      "staged falsification experiments"
+    ],
+    "essential_questions": [
+      {
+        "key": "founder_assets",
+        "prompt": "What skills, distribution, capital and execution time are actually available?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "opportunity_set",
+        "prompt": "Which alternatives and business models should be excluded or retained?"
+      }
+    ],
+    "risks": [
+      "Selection and survivorship bias",
+      "Total market treated as obtainable revenue",
+      "Unverified willingness to pay"
+    ],
+    "coverage": [
+      "customer_problem",
+      "alternatives",
+      "distribution",
+      "economics",
+      "execution",
+      "validation"
+    ],
+    "quantitative": [
+      "unit_economics",
+      "evpi",
+      "scenario_analysis"
+    ],
+    "verification": [
+      "Triangulate problem evidence with behavior and willingness-to-pay tests",
+      "Include null option and opportunity cost"
+    ],
+    "stopping": [
+      "Stop when next best experiment is clearer than further desk research"
+    ]
+  },
+  "finance": {
+    "label": "Financial and investment research",
+    "methods": [
+      "filing-based due diligence",
+      "valuation scenarios and balance-sheet stress",
+      "reference-class comparison"
+    ],
+    "essential_questions": [
+      {
+        "key": "instrument",
+        "prompt": "Which asset, instrument, jurisdiction and decision date?"
+      },
+      {
+        "key": "liquidity",
+        "prompt": "What capital, drawdown tolerance, liquidity and holding constraints?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "financial_data",
+        "prompt": "What dated audited statements, prices and transaction costs are accessible?"
+      }
+    ],
+    "risks": [
+      "Look-ahead bias",
+      "Point estimates hiding ruin risk",
+      "Confusing historical association with forecast"
+    ],
+    "coverage": [
+      "business_quality",
+      "valuation",
+      "liquidity",
+      "downside",
+      "governance",
+      "alternatives"
+    ],
+    "quantitative": [
+      "cashflow",
+      "bayes",
+      "evpi",
+      "joint_scenario_analysis"
+    ],
+    "verification": [
+      "Reconcile units, fiscal periods and adjustments to original filings",
+      "Out-of-sample forecasting and professional review for material decisions"
+    ],
+    "stopping": [
+      "Conditions reversing recommendation and irreducible uncertainty stated"
+    ]
+  },
+  "science": {
+    "label": "Scientific evidence review",
+    "methods": [
+      "PICO/PECO systematic or scoping protocol",
+      "study-level risk-of-bias assessment",
+      "outcome-level certainty and synthesis"
+    ],
+    "essential_questions": [
+      {
+        "key": "pico",
+        "prompt": "Which population, intervention/exposure, comparator and outcomes?"
+      },
+      {
+        "key": "review_type",
+        "prompt": "Systematic review, scoping review, rapid review or decision-focused summary?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "study_designs",
+        "prompt": "Which designs, languages, date limits, registries and unpublished evidence?"
+      }
+    ],
+    "risks": [
+      "Reports mistaken for independent studies",
+      "Publication bias",
+      "Inappropriate pooling",
+      "Applicability and causal confounding"
+    ],
+    "coverage": [
+      "question",
+      "search",
+      "screening",
+      "risk_of_bias",
+      "synthesis",
+      "certainty"
+    ],
+    "quantitative": [
+      "effect_estimates",
+      "heterogeneity",
+      "sensitivity"
+    ],
+    "verification": [
+      "Search log and exclusion reasons; second reviewer where feasible",
+      "No meta-analysis without extractable compatible outcomes and specialist validated code",
+      "GRADE judgments are outcome-specific; PRISMA is reporting guidance"
+    ],
+    "stopping": [
+      "Protocol-defined search completed; label rapid/scoping limitations explicitly"
+    ]
+  },
+  "technology": {
+    "label": "Technology evaluation",
+    "methods": [
+      "requirements-to-test matrix",
+      "controlled representative benchmark",
+      "security and total cost review"
+    ],
+    "essential_questions": [
+      {
+        "key": "workload",
+        "prompt": "Which actual workloads, deployment constraints, success metrics and baseline?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "stack",
+        "prompt": "What systems, data rights, integration boundaries and latency requirements?"
+      }
+    ],
+    "risks": [
+      "Vendor benchmarks treated as independent",
+      "Changing APIs",
+      "Benchmark leakage and unequal budgets"
+    ],
+    "coverage": [
+      "capability",
+      "compatibility",
+      "performance",
+      "security",
+      "cost",
+      "maintainability"
+    ],
+    "quantitative": [
+      "paired_evaluation",
+      "latency_distribution",
+      "sensitivity"
+    ],
+    "verification": [
+      "Pin versions, prompts, seeds, fixtures, limits and tool access",
+      "Separate documentation, mocks and real integration results"
+    ],
+    "stopping": [
+      "All critical requirements demonstrated or marked unmet"
+    ]
+  },
+  "general": {
+    "label": "Complex factual investigation",
+    "methods": [
+      "question decomposition",
+      "primary-source tracing",
+      "competing hypotheses and contradiction resolution"
+    ],
+    "essential_questions": [
+      {
+        "key": "definitions",
+        "prompt": "Which key terms or competing interpretations need definition?"
+      }
+    ],
+    "optional_questions": [
+      {
+        "key": "disconfirming",
+        "prompt": "What evidence would change your current belief or preferred answer?"
+      }
+    ],
+    "risks": [
+      "Source laundering",
+      "Unstated scope",
+      "Stale evidence",
+      "Overconfident synthesis"
+    ],
+    "coverage": [
+      "definitions",
+      "primary_evidence",
+      "alternatives",
+      "contradictions",
+      "uncertainty"
+    ],
+    "quantitative": [
+      "reproducible_calculations_if_needed"
+    ],
+    "verification": [
+      "Atomic claim mapping and direct support review",
+      "Trace reused stories to originating evidence"
+    ],
+    "stopping": [
+      "All consequential dimensions covered or gaps explained; further search unlikely to alter decision"
+    ]
+  }
+}

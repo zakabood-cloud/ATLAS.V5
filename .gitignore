@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.atlas/
+.env
+.env.*
+!.env.example
+.mcp.json
+
+projects/*
+!projects/.gitkeep
+memory/*.json
+memory/history/
+*.egg-info/
+build/
+dist/

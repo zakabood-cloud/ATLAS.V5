@@ -1,0 +1,11 @@
+# Adaptive intake procedure
+
+Start from the user's actual question. Identify whether the goal is a decision, explanation, causal estimate, forecast, evidence synthesis or discovery exercise. First articulate the important ambiguities in plain language. Do not browse the topic or silently reuse personal constraints from unrelated projects.
+
+The core bank is implemented in `atlas/intake.py`. Domain questions and risks are in `domains.json`. Ask relevant essential questions first, grouped by purpose, scope, resources and output. Always ask the exact deliverables and formats, including whether the user wants datasets, source library, rankings, financial model, slides, code or validation plan. Questions may have several linked subparts when that reduces repetition. There is no total question ceiling and no mandated 12–25-question batch.
+
+After each answer batch, maintain four categories: answered, explicitly excluded, unknown, provisional assumption. Reconcile contradictions explicitly: “maximum certainty at zero paid access” may be feasible for some questions but not for a proprietary data claim. Ask which constraint dominates or present the lower-evidence scope. Do not convert an ambiguous answer into a precise financial assumption. Questions should be neutral; do not embed a favored option in the framing.
+
+Add useful new keys with `atlas ask`. Skip repeats already answered in the visible conversation, but record their answers. Optional optimization questions should not prevent progress. If a user chooses to stop, show all consequential assumptions, clarify any actual authorization still needed and continue within the acknowledged scope. Unknown willingness to spend remains zero new paid access.
+
+A mandate must identify objective, decision, success, inclusion/exclusion, geography/population, time frame, constraints, evidence standard, resource permissions and deliverables. The engine enforces accounting for essential keys and records acknowledgement; it cannot infer whether the interview was thoughtful or whether a claimed acknowledgement occurred. Those remain live interaction evaluation criteria. Once the mandate is accepted, advance to ENABLEMENT for schema-2 projects; do not start META or substantive topic research until enablement and topic-specific access are reviewed.

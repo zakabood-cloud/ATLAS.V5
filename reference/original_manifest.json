@@ -1,0 +1,245 @@
+{
+  "archive_sha256": "eac11cdf83ce79808ac31d449efad6fea9ca74ff2744097858a527a44242e9c3",
+  "files": [
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agent-memory/.gitignore",
+      "bytes": 170,
+      "sha256": "6aa5a4fd3e6a3b4cd2c872b9266d0a23c7efa3f95d48b536b27c86f41857cbbc",
+      "lines": 4
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/adversarial-reviewer.md",
+      "bytes": 989,
+      "sha256": "db96e7e1e351fe3a3bb837d78580c9830a60a78441534f3f4924bacf986977c5",
+      "lines": 6
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/domain-researcher.md",
+      "bytes": 978,
+      "sha256": "306631307ed66484316e56e2ebe5157496fa712dda461cf2ab428cc96514e203",
+      "lines": 6
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/evidence-auditor.md",
+      "bytes": 963,
+      "sha256": "ccbb96389a9eec31e42587be3cb5d007f85aa6c1c98ac0efdeac5679231bf71b",
+      "lines": 6
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/methodology-architect.md",
+      "bytes": 1143,
+      "sha256": "467111bd85280758de1c7f6b17d16b73a4311243a3044ffb16d96ccad2ae86c2",
+      "lines": 7
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/quantitative-analyst.md",
+      "bytes": 1037,
+      "sha256": "30e56f8a0e19f9b7bb7d85a87ee7b56fe36898d4cc5deb867bb66ae24dee958d",
+      "lines": 6
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/report-synthesizer.md",
+      "bytes": 909,
+      "sha256": "3ecbd73fd1d0633d847c6fd4bc6987d9e4873099eb02a39ec6a4833c7d46ece6",
+      "lines": 6
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/source-intelligence.md",
+      "bytes": 962,
+      "sha256": "e9105e177d7b01ab092c0bb8ba2f27070aaecd22b4bde8d5dc3598a6a80d7399",
+      "lines": 7
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/agents/tool-mcp-architect.md",
+      "bytes": 953,
+      "sha256": "52dd58f48d9f63dbdbe35dc54dc0cfe2a67a1a8af23204cf78ff2616af97f739",
+      "lines": 7
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-audit/SKILL.md",
+      "bytes": 3818,
+      "sha256": "ffc007a1139e9b7fc3bdaa424eb878d7d6d8f93019a32adeb7807b335fd5e732",
+      "lines": 35
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-deliver/SKILL.md",
+      "bytes": 3664,
+      "sha256": "24cdeec4448ba8b74929248962bdb84ec257641232d25f457c1bee05f38f9784",
+      "lines": 41
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-execute/SKILL.md",
+      "bytes": 3726,
+      "sha256": "5ea3312264ef96e7858e030c0cb05be07d082bb5a324ac997c02c5a61270dc81",
+      "lines": 31
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-intake/SKILL.md",
+      "bytes": 5604,
+      "sha256": "f132b7ab2e7e62f4be30bc8d6237a4278077971a58b10a2bf31a8ea885b61533",
+      "lines": 33
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-memory/SKILL.md",
+      "bytes": 2629,
+      "sha256": "53525e641c8970cfc188a2e1857dc0a07f769db7b0be6d873b9328b0ef2535b4",
+      "lines": 28
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.claude/skills/research-meta/SKILL.md",
+      "bytes": 5816,
+      "sha256": "e24313047884063ff3cb9efbd4a813dc7c43f0eb0c64ee0d5031a6ad9671ea89",
+      "lines": 47
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/.gitignore",
+      "bytes": 314,
+      "sha256": "e70087d480bec19ea72e9ace2938e1eacabf0b57bdbc6aba427a3592157f60d6",
+      "lines": 15
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/CLAUDE.md",
+      "bytes": 5001,
+      "sha256": "72dd0dea16ccbe5f6e9da72a003ab1b7c4c8aff2bf7966ca69e9a660d96826bb",
+      "lines": 41
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/README.md",
+      "bytes": 3667,
+      "sha256": "ce01eaa7bdf46c5d7a19029de3c0361057d69a25f7483b96bbd99cee74dfac50",
+      "lines": 49
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/START_HERE.txt",
+      "bytes": 802,
+      "sha256": "2be54a099aac498f28b3478750a88fe94c49bb23cce284dec538ba9d4720cf1d",
+      "lines": 12
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/ULTIMATE_CLAUDE_RESEARCH_OS_MASTER.md",
+      "bytes": 133432,
+      "sha256": "3d8f762a42202b31cfede59f2b0d95a9a34cf283414a7cb4385132f0718979aa",
+      "lines": 1451
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/README.md",
+      "bytes": 2924,
+      "sha256": "50d5c1e82906f6495c70465bcac9d97896c5b506354c579a8d82c0d5e58fe9fc",
+      "lines": 40
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/domains/DOMAIN_PLAYBOOKS.md",
+      "bytes": 6448,
+      "sha256": "aef0063841fa71140e8496e6e7251e878633c506fa7564fe4db084655df494dc",
+      "lines": 33
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/engine/audit_project.py",
+      "bytes": 3769,
+      "sha256": "50580a2e85c6a08dcc7285d5ed957de166a1aae3ebc750188f1bed6ba3b69a5d",
+      "lines": 69
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/engine/verify_install.py",
+      "bytes": 2937,
+      "sha256": "4d0f73dfc7741e54424bd919d0de79caeda6041b3d5124e120109d5bf578a129",
+      "lines": 61
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/evaluations/EVALUATION_PROTOCOL.md",
+      "bytes": 3332,
+      "sha256": "be457fe30d207621cdfa06d30a5a88120a806a809e536f417a204ff31d045bdb",
+      "lines": 33
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/intake/QUESTION_BANK.md",
+      "bytes": 13491,
+      "sha256": "8684206fb4c8c72ed5190a76f8d55b4c325a699b74c657194780ee1bb50d423b",
+      "lines": 179
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/methods/MEMORY_POLICY.md",
+      "bytes": 2138,
+      "sha256": "e3527e1e89d26342719822f22fb8b1570058d7f592397f9c5b2d7a250bf321bc",
+      "lines": 19
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/methods/METHODS_INDEX.md",
+      "bytes": 538,
+      "sha256": "03320827505271f857f7acbf034872c7674d768062e3c17b28aa20c879eba795",
+      "lines": 12
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/operations/STATE_MACHINE.md",
+      "bytes": 3929,
+      "sha256": "4cb697e4cf4e3eff0c01b7fdbd21e249ed0a4f1dac08711c5130f7b711518619",
+      "lines": 37
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/CLAIM_AND_DATA_STANDARDS.md",
+      "bytes": 3815,
+      "sha256": "66088cbfaecdc0f84e67d94dfd038cb1874099eacb1355c43ee925a83b0df18e",
+      "lines": 34
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/DECISION_AND_STATISTICS.md",
+      "bytes": 3941,
+      "sha256": "cbae81be382dd27152141a27e2813d275da5eee09da13ba14615657b67c93bab",
+      "lines": 40
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/ORCHESTRATION_AND_SEARCH.md",
+      "bytes": 5041,
+      "sha256": "e5d29dc16565cf7108e8dc719cf3202f3069db60b24e1758c0a70f1a29fc0c4c",
+      "lines": 43
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/QUALITY_GATES.md",
+      "bytes": 3792,
+      "sha256": "3e241b520c13961e6eef3efc6e48752f296a4ff10f69fc203b3374f46b90f3f7",
+      "lines": 34
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/REFERENCE_LIBRARY.md",
+      "bytes": 4051,
+      "sha256": "10879efe3f41d6944593380354858b2c1ae439cfa0b47b5428ad6ab57d65a0f1",
+      "lines": 33
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/RESEARCH_CONSTITUTION.md",
+      "bytes": 5174,
+      "sha256": "fa7a15d632b2c298e4460c57e9e70a5267ed385dd3cc689b2b0a7005cdff0a79",
+      "lines": 45
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/SECURITY_AND_PERMISSIONS.md",
+      "bytes": 3091,
+      "sha256": "177f902d596622622ba21e3ff86b783e847d44e08b92b1c4ee7bb355b02f7a35",
+      "lines": 22
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/policies/TOOL_AND_SOURCE_INTELLIGENCE.md",
+      "bytes": 5580,
+      "sha256": "4c9af1823e25d27c430f1d7dfc8b1048419dd1ee815471aec418cb9dbf831c31",
+      "lines": 45
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/projects/.gitignore",
+      "bytes": 179,
+      "sha256": "c417748adbcd8f2da77a125dc39a1e537eb2dfac434cc12466d1a49cc9a6e643",
+      "lines": 4
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/state/.gitignore",
+      "bytes": 100,
+      "sha256": "e3d579384dcc76dcc1319a3d7513c2524eff68acf2d4c4237cfe9dd5b31edfec",
+      "lines": 3
+    },
+    {
+      "path": "ATLAS_Claude_Code_Research_OS_Repository/research_os/templates/PROJECT_SCHEMAS.md",
+      "bytes": 4975,
+      "sha256": "53f4efc7180b3825e669fcacc0cc07b4d4311cdbea8887925c2c68796e07af85",
+      "lines": 110
+    }
+  ]
+}

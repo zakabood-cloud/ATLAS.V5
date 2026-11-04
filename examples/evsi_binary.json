@@ -1,0 +1,1 @@
+{"kind":"evsi_binary","units":"USD","assumptions":["Hypothetical prior, test likelihoods and action payoffs, not measured evidence"],"prior_h":0.4,"p_positive_if_h":0.85,"p_positive_if_not_h":0.12,"experiment_cost":100,"payoffs":{"enter":{"h":2000,"not_h":-1000},"do_not_enter":{"h":0,"not_h":0}}}

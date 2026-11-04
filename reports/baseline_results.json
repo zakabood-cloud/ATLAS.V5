@@ -1,0 +1,229 @@
+{
+  "run_at_utc": "2026-11-03T16:53:25.102940+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "linux",
+  "claude_runtime": "unavailable",
+  "network_used": false,
+  "original_file_count": 40,
+  "embedded_payload_count": 36,
+  "embedded_all_identical": true,
+  "scope": "Deterministic local structural baseline tests only; no autonomous-research quality score.",
+  "results": [
+    {
+      "case": "pristine_install",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/verify_install.py"
+      ],
+      "expected": "accept",
+      "exit_code": 0,
+      "stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "stderr": "",
+      "details": "Original installation structural smoke check, unchanged copy."
+    },
+    {
+      "case": "malformed_yaml_frontmatter",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/verify_install.py"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "stderr": "",
+      "details": "Invalid YAML accepted because only --- delimiters are inspected."
+    },
+    {
+      "case": "meaningless_policy_payload",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/verify_install.py"
+      ],
+      "expected": "reject_or_manual_review",
+      "exit_code": 0,
+      "stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "stderr": "",
+      "details": "No syntax/semantic or internal-reference check; only 40-byte size threshold."
+    },
+    {
+      "case": "invalid_python_payload",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/verify_install.py"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS INSTALL CHECK PASS: 32 required files, skill frontmatter and CLAUDE.md length OK.\nNOTE: This check does not verify external MCP connections, actual model access or future research quality.\n",
+      "stderr": "",
+      "details": "Installer does not compile Python."
+    },
+    {
+      "case": "missing_required_file",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/verify_install.py"
+      ],
+      "expected": "reject",
+      "exit_code": 1,
+      "stdout": "ATLAS INSTALL CHECK FAILED\nMISSING/EMPTY: research_os/policies/QUALITY_GATES.md\n",
+      "stderr": "",
+      "details": "Positive control: required missing file correctly rejected."
+    },
+    {
+      "case": "unreviewed_intake_complete",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/unreviewed_intake_complete"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: unreviewed_intake_complete, stage=INTAKE_COMPLETE, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "No mandate, answers or deliverables contract, but early stages bypass all ledger and mandate checks."
+    },
+    {
+      "case": "arbitrary_stage",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/arbitrary_stage"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: arbitrary_stage, stage=BANANA, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "No enumerated stage validation; unknown stage treated like research and accepted with minimal ledgers."
+    },
+    {
+      "case": "fabricated_source_self_attested_v2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/fabricated_source_self_attested_v2"
+      ],
+      "expected": "reject_or_unverified",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: fabricated_source_self_attested_v2, stage=RESEARCH, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Nonexistent .invalid URL and mathematically false claim pass with self-declared V2. No network attempted."
+    },
+    {
+      "case": "critical_claim_without_source",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/critical_claim_without_source"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: critical_claim_without_source, stage=RESEARCH, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Critical V2 claim accepted with empty source_ids."
+    },
+    {
+      "case": "blank_source_row",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/blank_source_row"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: blank_source_row, stage=RESEARCH, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "One completely blank source row counts as a nonempty source ledger."
+    },
+    {
+      "case": "blank_claim_identifier",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/blank_claim_identifier"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: blank_claim_identifier, stage=RESEARCH, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Blank claim IDs are ignored during uniqueness checks and otherwise permitted."
+    },
+    {
+      "case": "missing_source_reference",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/missing_source_reference"
+      ],
+      "expected": "reject",
+      "exit_code": 1,
+      "stdout": "ATLAS PROJECT AUDIT: missing_source_reference, stage=RESEARCH, issues=1\n- Claim C1 references missing source S9\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Positive control: undefined cited source correctly rejected."
+    },
+    {
+      "case": "duplicate_source_id",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/duplicate_source_id"
+      ],
+      "expected": "reject",
+      "exit_code": 1,
+      "stdout": "ATLAS PROJECT AUDIT: duplicate_source_id, stage=RESEARCH, issues=1\n- Duplicate source ID: S1\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Positive control: duplicate source ID correctly rejected."
+    },
+    {
+      "case": "unverified_critical_claim",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/unverified_critical_claim"
+      ],
+      "expected": "reject",
+      "exit_code": 1,
+      "stdout": "ATLAS PROJECT AUDIT: unverified_critical_claim, stage=RESEARCH, issues=1\n- Critical claim C1 not fully source-verified (status=V0_UNCHECKED); must be labeled conditional/unverified in report\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Positive control: critical V0 correctly rejected."
+    },
+    {
+      "case": "empty_completion_artifacts",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/empty_completion_artifacts"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: empty_completion_artifacts, stage=COMPLETE, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Empty presence-only gate files accepted at COMPLETE; no actual report needed."
+    },
+    {
+      "case": "corrupted_state",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/corrupted_state"
+      ],
+      "expected": "reject",
+      "exit_code": 1,
+      "stdout": "ATLAS PROJECT AUDIT: corrupted_state, stage=?, issues=1\n- Invalid state JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Positive control: malformed JSON state correctly rejected."
+    },
+    {
+      "case": "invalid_enums",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research_os/engine/audit_project.py",
+        "/workspace/scratch/e84f447287a9/audit_work/baseline/research_os/projects/invalid_enums"
+      ],
+      "expected": "reject",
+      "exit_code": 0,
+      "stdout": "ATLAS PROJECT AUDIT: invalid_enums, stage=RESEARCH, issues=0\nWARNING: passing this script only checks structural consistency; source validity, statistical integrity and compliance require independent review.\n",
+      "stderr": "",
+      "details": "Unknown verification/materiality enums accepted unless critical recognized string."
+    }
+  ]
+}

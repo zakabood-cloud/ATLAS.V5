@@ -1,0 +1,4 @@
+{
+  "kind": "ecommerce_economics", "units": "USD", "assumptions": ["Illustrative one-period accounting, not actual Amazon fees or customer acquisition data", "Inventory outlay is upfront; settlement_fraction represents share collected in the current period"],
+  "price_gross": "49.99", "vat_rate": "0.05", "orders": "120", "refund_rate": "0.07", "unit_landed": "13.2", "outbound_fulfillment": "5.5", "payment_fixed": "0.3", "ads_per_order": "13", "returns_processing": "1.0", "platform_fee_rate_net": "0.12", "payment_fee_rate_net": "0.025", "period_fixed": "800", "inventory_units": "180", "opening_cash": "8000", "settlement_fraction": "0.8"
+}
