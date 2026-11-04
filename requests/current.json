@@ -1,8 +1,8 @@
 {
- "id": "probe-003",
+ "id": "access-test-001",
  "urls": [
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200336920"
+  "https://sell.amazon.com/pricing"
  ],
- "mode": "chrome",
+ "mode": "http",
  "delay": 1.5
 }
