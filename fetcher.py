@@ -16,11 +16,15 @@ import tarfile
 import tempfile
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
+import urllib.robotparser
 import zlib
 
-UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+# Honest identification; robots.txt rules for this token (or "*") are obeyed.
+UA_TOKEN = "ATLAS-research-relay"
+UA = (f"Mozilla/5.0 (compatible; {UA_TOKEN}/1.0; "
+      "+https://github.com/zakabood-cloud/ATLAS.V5)")
 MAX_BYTES = 15 * 1024 * 1024
 HEADERS = {
     "User-Agent": UA,
@@ -73,9 +77,36 @@ def fetch_chrome(url):
     return meta, p.stdout[:MAX_BYTES]
 
 
+_ROBOTS = {}
+
+
+def robots_allows(url):
+    """RFC 9309: 2xx -> parse rules; 4xx -> allow; 5xx/network failure -> disallow."""
+    parts = urllib.parse.urlsplit(url)
+    origin = f"{parts.scheme}://{parts.netloc}"
+    if origin not in _ROBOTS:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            req = urllib.request.Request(origin + "/robots.txt", headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                raw = decode_body(resp.read(512 * 1024), resp.headers.get("Content-Encoding", ""))
+            rp.parse(raw.decode("utf-8", "replace").splitlines())
+            verdict = ("parsed", rp)
+        except urllib.error.HTTPError as e:
+            verdict = ("allow-4xx", None) if 400 <= e.code < 500 else ("disallow-unreachable", None)
+        except Exception:
+            verdict = ("disallow-unreachable", None)
+        _ROBOTS[origin] = verdict
+    kind, rp = _ROBOTS[origin]
+    if kind == "parsed":
+        return rp.can_fetch(UA_TOKEN, url), kind
+    return kind == "allow-4xx", kind
+
+
 def main(request_path, out_dir):
     spec = json.loads(pathlib.Path(request_path).read_text())
-    rid, mode, delay = spec["id"], spec.get("mode", "http"), float(spec.get("delay", 1.0))
+    rid, mode = spec["id"], spec.get("mode", "http")
+    delay = max(1.0, float(spec.get("delay", 1.5)))  # polite floor between requests
     out = pathlib.Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
@@ -86,8 +117,14 @@ def main(request_path, out_dir):
         for i, url in enumerate(spec["urls"]):
             started = time.time()
             try:
-                meta, body = (fetch_chrome if mode == "chrome" else fetch_http)(url)
-                meta["error"] = None
+                allowed, robots = robots_allows(url)
+                if not allowed:
+                    meta, body = {"status": None, "final_url": url, "content_type": "",
+                                  "error": f"robots.txt disallows ({robots}); not fetched"}, b""
+                else:
+                    meta, body = (fetch_chrome if mode == "chrome" else fetch_http)(url)
+                    meta["error"] = None
+                meta["robots"] = robots
             except Exception as exc:  # record every failure; never retry silently
                 meta, body = {"status": None, "final_url": url, "content_type": "",
                               "error": f"{type(exc).__name__}: {exc}"[:300]}, b""
