@@ -1,12 +1,8 @@
 {
- "id": "probe-002",
+ "id": "probe-003",
  "urls": [
-  "https://sell.amazon.com/pricing",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200336920",
-  "https://sell.amazon.ae/",
-  "https://u.ae/en/information-and-services/business/corporate-tax",
-  "https://www.irs.gov/pub/irs-pdf/fw8ben.pdf"
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200336920"
  ],
- "mode": "http",
+ "mode": "chrome",
  "delay": 1.5
 }
