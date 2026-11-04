@@ -1,0 +1,30 @@
+name: atlas-fetch
+
+# Read-only relay used by the ATLAS research session: fetches the public URLs
+# listed in requests/current.json and uploads the results encrypted to the
+# session's public key, so page copies are not published in this public repo.
+on:
+  push:
+    branches: [atlas-fetch]
+    paths: ['requests/current.json']
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read request id
+        id: req
+        run: echo "rid=$(python3 -c 'import json;print(json.load(open("requests/current.json"))["id"])')" >> "$GITHUB_OUTPUT"
+      - name: Fetch and encrypt
+        run: python3 fetcher.py requests/current.json out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.req.outputs.rid }}
+          path: out/
+          retention-days: 1
+          if-no-files-found: error
