@@ -1,8 +1,12 @@
 {
- "id": "retrieve-C-004",
+ "id": "econ-001",
  "urls": [
-  "https://www.junglescout.com/blog/these-are-the-biggest-challenges-for-amazon-sellers-takeaways-from-our-survey/",
-  "https://www.marketplacepulse.com/articles/amazon-suspends-amazon-native-brands-mpow-and-aukey"
+  "https://ustr.gov/issue-areas/enforcement/section-301-investigations/tariff-actions",
+  "https://www.cbp.gov/trade/programs-administration/entry-summary/section-301-trade-remedies/faqs",
+  "https://www.cbp.gov/trade/programs-administration/entry-summary/section-301-trade-remedies",
+  "https://www.uspto.gov/trademarks/fees-payment-information",
+  "https://hts.usitc.gov/reststop/search?keyword=3924.10.40",
+  "https://hts.usitc.gov/reststop/search?keyword=9903.88.03"
  ],
  "mode": "http",
  "delay": 1.5
