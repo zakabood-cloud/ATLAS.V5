@@ -1,12 +1,17 @@
 {
- "id": "retrieve-B-008",
+ "id": "retrieve-B-009",
  "urls": [
-  "https://www.junglescout.com/article-sitemap.xml",
-  "https://www.junglescout.com/post-sitemap.xml",
-  "https://www.helium10.com/post-sitemap.xml",
-  "https://www.helium10.com/post-sitemap2.xml",
-  "https://www.helium10.com/post-sitemap3.xml",
-  "https://www.helium10.com/amazon101-sitemap.xml"
+  "https://www.junglescout.com/blog/evaluate-alibaba-suppliers/",
+  "https://www.junglescout.com/blog/how-to-ship-from-china/",
+  "https://www.junglescout.com/resources/articles/international-freight-for-amazon-fba/",
+  "https://www.helium10.com/blog/freight-forwarder-for-amazon-fba/",
+  "https://www.junglescout.com/resources/articles/how-to-find-suppliers-outside-of-china-to-navigate-tariffs/",
+  "https://www.helium10.com/blog/tariffs-inventory-and-margin-pressure-seller-tips/",
+  "https://www.helium10.com/blog/tariffs-101-for-sellers/",
+  "https://www.helium10.com/podcast/amazon-product-inspections/",
+  "https://www.junglescout.com/blog/how-to-find-a-supplier/",
+  "https://www.qima.com/consumer-products/pre-shipment-inspection",
+  "https://www.junglescout.com/resources/articles/how-much-does-it-cost-to-sell-on-amazon/"
  ],
  "mode": "http",
  "delay": 1.5
