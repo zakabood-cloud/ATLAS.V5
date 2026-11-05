@@ -1,17 +1,9 @@
 {
- "id": "retrieve-C-003c",
+ "id": "retrieve-C-004",
  "urls": [
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200612770",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G3EDYEF6KUCFQTNM",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GV43F6S76Y9DHYRH",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GJTAVU7P2W2VE8Q9",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G1791",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200386250",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G84H3T69ZX762NWT",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GL5XA3MNXAJKJE8E",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200213130"
+  "https://www.junglescout.com/blog/these-are-the-biggest-challenges-for-amazon-sellers-takeaways-from-our-survey/",
+  "https://www.marketplacepulse.com/articles/amazon-suspends-amazon-native-brands-mpow-and-aukey"
  ],
- "mode": "chrome",
+ "mode": "http",
  "delay": 1.5
 }
