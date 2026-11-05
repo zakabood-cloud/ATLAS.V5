@@ -1,22 +1,16 @@
 {
- "id": "retrieve-C-002c",
+ "id": "retrieve-C-003c",
  "urls": [
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200336920",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G201411300",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200209150",
   "https://sellercentral.amazon.com/help/hub/reference/external/G200612770",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GC3Q44PBK8BXQW3Z",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GZGEQLTM3RZXUV6T",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200684750",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GAFNWEYTJUV2GBFC",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GXLRKWL8L5BMSHWB",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200205250",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G1801",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G201165970",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GRD4EMBNNW3P47GH",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GQ5DSES264XVXNX7",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G6F7CN3EQS7MEGCN"
+  "https://sellercentral.amazon.com/help/hub/reference/external/G3EDYEF6KUCFQTNM",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GV43F6S76Y9DHYRH",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GJTAVU7P2W2VE8Q9",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G1791",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200386250",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G84H3T69ZX762NWT",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GL5XA3MNXAJKJE8E",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200213130"
  ],
  "mode": "chrome",
  "delay": 1.5
