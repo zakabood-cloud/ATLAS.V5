@@ -1,18 +1,24 @@
 {
- "id": "retrieve-A-003c",
+ "id": "retrieve-A-004",
  "urls": [
-  "https://sellercentral.amazon.com/help/hub/reference/external/G2N3GKE5SGSHWYRZ",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200426310",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200211450",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G201808410",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G37911",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GXMJ38VA95GUN5XU",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G87HAE6PMKKM23Z7",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GL9HPJ34VBFP76HX",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GX3CEV63Y4ZZAP37",
-  "https://sellercentral.amazon.com/help/hub/reference/external/202059240",
-  "https://sellercentral.amazon.com/help/hub/reference/external/GNJ4YRTXWLMBY38U"
+  "https://www.marketplacepulse.com/articles/the-marketplace-pulse-seller-index-results-2026",
+  "https://www.marketplacepulse.com/articles/amazon-seller-registrations-hit-decade-low-in-2025",
+  "https://www.marketplacepulse.com/articles/china-won-amazons-top-10000-america-kept-its-top-100",
+  "https://www.marketplacepulse.com/articles/top-16-of-sellers-drive-50-of-amazons-3p-gmv",
+  "https://www.marketplacepulse.com/articles/china-reaches-global-majority-on-amazon",
+  "https://www.marketplacepulse.com/articles/amazons-expansive-advertising-breaks-new-records",
+  "https://www.marketplacepulse.com/articles/amazon-steers-third-party-seller-share-to-all-time-high",
+  "https://www.marketplacepulse.com/articles/the-amazon-aggregator-is-dead",
+  "https://www.marketplacepulse.com/articles/amazon-is-not-abandoning-private-label-business",
+  "https://www.marketplacepulse.com/articles/amazon-laid-the-brandless-foundation-for-temu",
+  "https://www.marketplacepulse.com/articles/the-disappearing-amazon-resellers",
+  "https://www.marketplacepulse.com/articles/veteran-amazon-sellers-increasingly-dominate",
+  "https://www.marketplacepulse.com/articles/the-paradoxical-dependence-of-amazon-its-sellers",
+  "https://www.marketplacepulse.com/stats/amazon-percent-of-units-by-third-party-sellers",
+  "https://www.marketplacepulse.com/stats/amazon-advertising-services-sales",
+  "https://www.marketplacepulse.com/articles/100000-million-dollar-amazon-sellers",
+  "https://www.govinfo.gov/content/pkg/FR-2024-08-22/pdf/2024-18519.pdf"
  ],
- "mode": "chrome",
+ "mode": "http",
  "delay": 1.5
 }
