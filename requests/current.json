@@ -1,17 +1,18 @@
 {
- "id": "retrieve-B-009",
+ "id": "retrieve-B-010",
  "urls": [
-  "https://www.junglescout.com/blog/evaluate-alibaba-suppliers/",
-  "https://www.junglescout.com/blog/how-to-ship-from-china/",
-  "https://www.junglescout.com/resources/articles/international-freight-for-amazon-fba/",
-  "https://www.helium10.com/blog/freight-forwarder-for-amazon-fba/",
-  "https://www.junglescout.com/resources/articles/how-to-find-suppliers-outside-of-china-to-navigate-tariffs/",
-  "https://www.helium10.com/blog/tariffs-inventory-and-margin-pressure-seller-tips/",
-  "https://www.helium10.com/blog/tariffs-101-for-sellers/",
-  "https://www.helium10.com/podcast/amazon-product-inspections/",
-  "https://www.junglescout.com/blog/how-to-find-a-supplier/",
-  "https://www.qima.com/consumer-products/pre-shipment-inspection",
-  "https://www.junglescout.com/resources/articles/how-much-does-it-cost-to-sell-on-amazon/"
+  "https://taxsummaries.pwc.com/saudi-arabia/corporate/other-taxes",
+  "https://taxsummaries.pwc.com/united-arab-emirates/corporate/taxes-on-corporate-income",
+  "https://taxsummaries.pwc.com/united-arab-emirates/corporate/other-taxes",
+  "https://taxsummaries.pwc.com/united-states/corporate/other-taxes",
+  "https://comptroller.texas.gov/taxes/sales/marketplace-providers-sellers.php",
+  "https://www.cdtfa.ca.gov/industry/marketplace.htm",
+  "https://www.moec.gov.ae/en/trademarks",
+  "https://www.moec.gov.ae/sitemap.xml",
+  "https://brandservices.amazon.ae/",
+  "https://sell.amazon.ae/brand-registry",
+  "https://web.archive.org/web/2024/https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Finds-Amazon-Responsible-Under-Federal-Law-to-Recall-Hazardous-Products-Sold-on-Amazon-com",
+  "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=amazon+recall&conditions[agencies][]=consumer-product-safety-commission&per_page=10"
  ],
  "mode": "http",
  "delay": 1.5
