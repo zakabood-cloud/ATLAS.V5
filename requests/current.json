@@ -1,11 +1,22 @@
 {
- "id": "retrieve-B-004",
+ "id": "retrieve-B-005",
  "urls": [
-  "https://www.federalregister.gov/api/v1/documents/2026-15274.json",
-  "https://www.federalregister.gov/api/v1/documents/2026-15181.json",
-  "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15274.pdf",
-  "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15181.pdf",
-  "https://www.federalregister.gov/api/v1/documents/2026-20510.json"
+  "https://sell.amazon.ae/beginners-guide",
+  "https://sell.amazon.sa/en/beginners-guide",
+  "https://sell.amazon.ae/pricing",
+  "https://sell.amazon.sa/en/pricing",
+  "https://m.media-amazon.com/images/G/41/SA_Referral_Fee_Campaign/Amazonsa_NewSellersFeeReductionTermsandConditionsEnglish.pdf",
+  "https://m.media-amazon.com/images/G/39/sellonamazon-new/GREx_AE_Guideline_Updated.pdf",
+  "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/default.aspx",
+  "https://www.irs.gov/publications/p519",
+  "https://www.irs.gov/forms-pubs/about-form-1120-f",
+  "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=eFiling&conditions[agencies][]=consumer-product-safety-commission&conditions[type][]=RULE&order=newest&per_page=10",
+  "https://www.qima.com/inspection/pre-shipment-inspection",
+  "https://www.asiaqualityfocus.com/pricing/",
+  "https://www.hqts.com/pricing/",
+  "https://www.v-trust.com/en/",
+  "https://www.federalregister.gov/api/v1/documents/2026-03829.json",
+  "https://www.federalregister.gov/api/v1/documents/2026-03824.json"
  ],
  "mode": "http",
  "delay": 1.5
