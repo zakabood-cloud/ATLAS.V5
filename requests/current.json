@@ -1,12 +1,11 @@
 {
- "id": "retrieve-B-006c",
+ "id": "retrieve-B-007",
  "urls": [
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200164330",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200333160",
-  "https://sellercentral.amazon.ae/help/hub/reference/external/GWHQRT98SAZC29VQ",
-  "https://sellercentral.amazon.sa/help/hub/reference/external/GWHQRT98SAZC29VQ?locale=en-US",
-  "https://sellercentral.amazon.com/help/hub/reference/external/G200141500"
+  "https://www.junglescout.com/sitemap_index.xml",
+  "https://www.helium10.com/sitemap_index.xml",
+  "https://www.federalregister.gov/api/v1/documents/2024-30826.json",
+  "https://www.qima.com/inspection"
  ],
- "mode": "chrome",
+ "mode": "http",
  "delay": 1.5
 }
