@@ -1,18 +1,18 @@
 {
- "id": "retrieve-A-002",
+ "id": "retrieve-A-003c",
  "urls": [
-  "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2025-letter-to-shareholders",
-  "https://www.aboutamazon.com/news/small-business/amazon-2025-small-business-empowerment-report",
-  "https://sell.amazon.com/tools/amazon-brand-analytics",
-  "https://sell.amazon.com/advertising/sponsored-products",
-  "https://sell.amazon.com/programs/vine/guide",
-  "http://www.marketplacepulse.com/articles/sitemap.xml",
-  "http://www.marketplacepulse.com/stats/sitemap.xml",
-  "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=%22consumer+reviews+and+testimonials%22&conditions[agencies][]=federal-trade-commission&order=newest",
-  "https://web.archive.org/web/2025/https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials",
-  "https://www.uspto.gov/trademarks/fees-payment-information",
-  "https://www.uspto.gov/trademarks/trademark-fee-adjustment"
+  "https://sellercentral.amazon.com/help/hub/reference/external/G2N3GKE5SGSHWYRZ",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200426310",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G200211450",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G201808410",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G37911",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GXMJ38VA95GUN5XU",
+  "https://sellercentral.amazon.com/help/hub/reference/external/G87HAE6PMKKM23Z7",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GL9HPJ34VBFP76HX",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GX3CEV63Y4ZZAP37",
+  "https://sellercentral.amazon.com/help/hub/reference/external/202059240",
+  "https://sellercentral.amazon.com/help/hub/reference/external/GNJ4YRTXWLMBY38U"
  ],
- "mode": "http",
+ "mode": "chrome",
  "delay": 1.5
 }
