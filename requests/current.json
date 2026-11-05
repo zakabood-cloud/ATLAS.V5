@@ -1,10 +1,12 @@
 {
- "id": "retrieve-B-007",
+ "id": "retrieve-B-008",
  "urls": [
-  "https://www.junglescout.com/sitemap_index.xml",
-  "https://www.helium10.com/sitemap_index.xml",
-  "https://www.federalregister.gov/api/v1/documents/2024-30826.json",
-  "https://www.qima.com/inspection"
+  "https://www.junglescout.com/article-sitemap.xml",
+  "https://www.junglescout.com/post-sitemap.xml",
+  "https://www.helium10.com/post-sitemap.xml",
+  "https://www.helium10.com/post-sitemap2.xml",
+  "https://www.helium10.com/post-sitemap3.xml",
+  "https://www.helium10.com/amazon101-sitemap.xml"
  ],
  "mode": "http",
  "delay": 1.5
