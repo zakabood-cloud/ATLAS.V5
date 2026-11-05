@@ -1,22 +1,11 @@
 {
- "id": "retrieve-B-003",
+ "id": "retrieve-B-004",
  "urls": [
-  "https://www.govinfo.gov/content/pkg/FR-2026-02-25/pdf/2026-03824.pdf",
-  "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=duties&conditions[type][]=PRESDOCU&conditions[publication_date][gte]=2026-06-01&order=newest&per_page=40",
-  "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=section+301&conditions[agencies][]=trade-representative-office-of-united-states&order=newest&per_page=20",
-  "https://mof.gov.ae/en/public-finance/tax/corporate-tax-in-the-uae/",
-  "https://mof.gov.ae/en/public-finance/tax/value-added-tax-vat/",
-  "https://mof.gov.ae/en/public-finance/international-relations/double-taxation-agreements-dtas/",
-  "https://www.qima.com/newsroom/news/news-q4-2026-barometer",
-  "https://www.qima.com/newsroom/news/news-q3-2026-barometer",
-  "https://www.qima.com/newsroom/news/news-q2-2026-barometer",
-  "https://www.aboutamazon.com/news/aws-bahrain-region-middle-east-conflict",
-  "https://www.verpackungsregister.org/en/knowledge-bases/mail-order-companies-and-online-retailers",
-  "https://www.gov.uk/vat-registration/when-to-register",
-  "https://web.archive.org/web/2024/https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0988",
-  "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R0988",
-  "https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en",
-  "https://zatca.gov.sa/en/RulesRegulations/Taxes/VAT/Pages/default.aspx"
+  "https://www.federalregister.gov/api/v1/documents/2026-15274.json",
+  "https://www.federalregister.gov/api/v1/documents/2026-15181.json",
+  "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15274.pdf",
+  "https://www.govinfo.gov/content/pkg/FR-2026-07-28/pdf/2026-15181.pdf",
+  "https://www.federalregister.gov/api/v1/documents/2026-20510.json"
  ],
  "mode": "http",
  "delay": 1.5
